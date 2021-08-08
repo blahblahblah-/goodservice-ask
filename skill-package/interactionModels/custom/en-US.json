@@ -1,0 +1,5330 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "good service",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "LookupTrainTimes",
+          "slots": [
+            {
+              "name": "station",
+              "type": "STATION"
+            }
+          ],
+          "samples": [
+            "the next train times",
+            "when is the next arrival",
+            "what is the next train",
+            "when will the next train arrive",
+            "when is the next train",
+            "when the next train is at {station}",
+            "when does the next train arrive",
+            "when will the next train arrive in the {station}",
+            "when is the next train going to {station}",
+            "what is the next arrival for {station}",
+            "when is the next {station} train",
+            "when is my next train arriving",
+            "when are the next train times",
+            "when will the next trains arrive at {station}",
+            "the next trains at {station}",
+            "what are the next arrival times",
+            "what are the next arrival times for {station}",
+            "when are the next trains arriving",
+            "when are the next trains arriving at {station}",
+            "when is the next train coming to {station}",
+            "when is the next train coming",
+            "when are the next trains for {station}",
+            "when are the next trains",
+            "when is the next train arriving at {station}",
+            "when is the next train arriving",
+            "lookup train times for {station}",
+            "lookup train times"
+          ]
+        },
+        {
+          "name": "LookupDelays",
+          "slots": [],
+          "samples": [
+            "what trains are already late",
+            "what trains are being late",
+            "list the trains are now late",
+            "which trains are already late",
+            "list of trains are late",
+            "currently delayed trains",
+            "list the trains that are currently delayed",
+            "list the trains that are delayed",
+            "which trains are currently delayed",
+            "which trains are delayed",
+            "what trains are delayed",
+            "what trains are currently delayed"
+          ]
+        },
+        {
+          "name": "LookupTrainStatus",
+          "slots": [
+            {
+              "name": "train",
+              "type": "TRAIN"
+            }
+          ],
+          "samples": [
+            "what is the status of the {train}",
+            "how are the {train}",
+            "how\u0027s the status of the {train}",
+            "whats the status of {train} trains",
+            "the status of the {train}",
+            "what about {train} train",
+            "whats going on with the {train}",
+            "what\u0027s the {train} doing",
+            "what is the status {train} train",
+            "whats with {train} train",
+            "status of {train} train",
+            "status of {train}",
+            "the status of {train}",
+            "the status of the {train} train",
+            "what\u0027s up with {train} train",
+            "what\u0027s up with the {train}",
+            "what\u0027s up with the {train} train",
+            "what\u0027s the status of the {train}",
+            "what\u0027s the status of the {train} train",
+            "how\u0027s the {train} doing",
+            "what\u0027s the status of {train}",
+            "what\u0027s the status of {train} train",
+            "how\u0027s the {train} train doing"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "J15,G11",
+              "name": {
+                "value": "woodhaven boulevard"
+              }
+            },
+            {
+              "id": "D20,A32",
+              "name": {
+                "value": "west 4th street",
+                "synonyms": [
+                  "west 4th street washington square"
+                ]
+              }
+            },
+            {
+              "id": "419,230",
+              "name": {
+                "value": "wall street"
+              }
+            },
+            {
+              "id": "J23,256,A53",
+              "name": {
+                "value": "van siclen avenue"
+              }
+            },
+            {
+              "id": "127,902,R16,725",
+              "name": {
+                "value": "times square 42nd street",
+                "synonyms": [
+                  "times square",
+                  "42nd and broadway",
+                  "42nd and 7th"
+                ]
+              }
+            },
+            {
+              "id": "A33,638",
+              "name": {
+                "value": "spring street"
+              }
+            },
+            {
+              "id": "A50,253",
+              "name": {
+                "value": "rockaway avenue"
+              }
+            },
+            {
+              "id": "139,R26",
+              "name": {
+                "value": "rector street"
+              }
+            },
+            {
+              "id": "R09,718",
+              "name": {
+                "value": "queensboro plaza"
+              }
+            },
+            {
+              "id": "R34,219",
+              "name": {
+                "value": "prospect avenue"
+              }
+            },
+            {
+              "id": "504,211",
+              "name": {
+                "value": "pelham parkway"
+              }
+            },
+            {
+              "id": "228,S03",
+              "name": {
+                "value": "park place"
+              }
+            },
+            {
+              "id": "248,A46",
+              "name": {
+                "value": "nostrand avenue",
+                "synonyms": [
+                  "nordstrom avenue"
+                ]
+              }
+            },
+            {
+              "id": "257,L27",
+              "name": {
+                "value": "new lots avenue"
+              }
+            },
+            {
+              "id": "L17,M08",
+              "name": {
+                "value": "myrtle wyckoff avenues"
+              }
+            },
+            {
+              "id": "M13,L10",
+              "name": {
+                "value": "lorimer street"
+              }
+            },
+            {
+              "id": "D04,406",
+              "name": {
+                "value": "kingsbridge road"
+              }
+            },
+            {
+              "id": "D35,F35,N08",
+              "name": {
+                "value": "kings highway"
+              }
+            },
+            {
+              "id": "R29,A41",
+              "name": {
+                "value": "jay street metrotech"
+              }
+            },
+            {
+              "id": "J29,L19",
+              "name": {
+                "value": "halsey street"
+              }
+            },
+            {
+              "id": "503,208",
+              "name": {
+                "value": "gun hill road"
+              }
+            },
+            {
+              "id": "L12,D22",
+              "name": {
+                "value": "grand street"
+              }
+            },
+            {
+              "id": "901,723,631",
+              "name": {
+                "value": "grand central 42nd street",
+                "synonyms": [
+                  "grand central",
+                  "42nd and park",
+                  "42nd and lex",
+                  "42nd street and lexington avenue"
+                ]
+              }
+            },
+            {
+              "id": "229,A38,418,M22,G36",
+              "name": {
+                "value": "fulton street",
+                "synonyms": [
+                  "fulton center"
+                ]
+              }
+            },
+            {
+              "id": "A45,S01,239",
+              "name": {
+                "value": "franklin avenue"
+              }
+            },
+            {
+              "id": "N03,B13,F26",
+              "name": {
+                "value": "fort hamilton parkway"
+              }
+            },
+            {
+              "id": "D05,407",
+              "name": {
+                "value": "fordham road"
+              }
+            },
+            {
+              "id": "M12,G31",
+              "name": {
+                "value": "flushing avenue"
+              }
+            },
+            {
+              "id": "109,A03",
+              "name": {
+                "value": "dyckman street",
+                "synonyms": [
+                  "dikeman street"
+                ]
+              }
+            },
+            {
+              "id": "R30,L16",
+              "name": {
+                "value": "dekalb avenue"
+              }
+            },
+            {
+              "id": "F09,G22,719",
+              "name": {
+                "value": "court square"
+              }
+            },
+            {
+              "id": "A44,G35",
+              "name": {
+                "value": "clinton washington avenues"
+              }
+            },
+            {
+              "id": "D28,F27,244",
+              "name": {
+                "value": "church avenue"
+              }
+            },
+            {
+              "id": "M21,A36,137",
+              "name": {
+                "value": "chambers street"
+              }
+            },
+            {
+              "id": "118,A17",
+              "name": {
+                "value": "cathedral parkway 110th street",
+                "synonyms": [
+                  "cathedral parkway"
+                ]
+              }
+            },
+            {
+              "id": "A34,Q01,R23,M20,639,135",
+              "name": {
+                "value": "canal street"
+              }
+            },
+            {
+              "id": "D21,G30",
+              "name": {
+                "value": "broadway"
+              }
+            },
+            {
+              "id": "L22,A51,J27",
+              "name": {
+                "value": "broadway junction"
+              }
+            },
+            {
+              "id": "232,423",
+              "name": {
+                "value": "borough hall"
+              }
+            },
+            {
+              "id": "D29,245",
+              "name": {
+                "value": "beverley road"
+              }
+            },
+            {
+              "id": "236,F20",
+              "name": {
+                "value": "bergen street"
+              }
+            },
+            {
+              "id": "B21,N07,F32",
+              "name": {
+                "value": "bay parkway"
+              }
+            },
+            {
+              "id": "D37,F36,N09",
+              "name": {
+                "value": "avenue u"
+              }
+            },
+            {
+              "id": "R31,D24,235",
+              "name": {
+                "value": "atlantic avenue barclays center",
+                "synonyms": [
+                  "barclays center"
+                ]
+              }
+            },
+            {
+              "id": "Q05,120,A19,625",
+              "name": {
+                "value": "96th street"
+              }
+            },
+            {
+              "id": "L01,N02",
+              "name": {
+                "value": "8th avenue"
+              }
+            },
+            {
+              "id": "Q04,R44,121,A20,626,N10",
+              "name": {
+                "value": "86th street"
+              }
+            },
+            {
+              "id": "D14,F24",
+              "name": {
+                "value": "7th avenue"
+              }
+            },
+            {
+              "id": "122,B18",
+              "name": {
+                "value": "79th street"
+              }
+            },
+            {
+              "id": "R43,627",
+              "name": {
+                "value": "77th street"
+              }
+            },
+            {
+              "id": "Q03,123,A22",
+              "name": {
+                "value": "72nd street"
+              }
+            },
+            {
+              "id": "R41,629,A24,125",
+              "name": {
+                "value": "59th street"
+              }
+            },
+            {
+              "id": "A24,125",
+              "name": {
+                "value": "59th street columbus circle",
+                "synonyms": [
+                  "columbus circle"
+                ]
+              }
+            },
+            {
+              "id": "126,A25",
+              "name": {
+                "value": "50th street"
+              }
+            },
+            {
+              "id": "R36,G20",
+              "name": {
+                "value": "36th street",
+                "synonyms": [
+                  "36th street R train"
+                ]
+              }
+            },
+            {
+              "id": "128,A28",
+              "name": {
+                "value": "34th street penn station",
+                "synonyms": [
+                  "penn station"
+                ]
+              }
+            },
+            {
+              "id": "D17,R17",
+              "name": {
+                "value": "34th street herald square",
+                "synonyms": [
+                  "34th and broadway",
+                  "34th and 6th",
+                  "herald square"
+                ]
+              }
+            },
+            {
+              "id": "129,R18,633",
+              "name": {
+                "value": "28th street"
+              }
+            },
+            {
+              "id": "D18,130,A30,R19,634",
+              "name": {
+                "value": "23rd street"
+              }
+            },
+            {
+              "id": "N06,B20",
+              "name": {
+                "value": "20th avenue"
+              }
+            },
+            {
+              "id": "N05,F30,B19",
+              "name": {
+                "value": "18th avenue"
+              }
+            },
+            {
+              "id": "A06,111",
+              "name": {
+                "value": "181st street"
+              }
+            },
+            {
+              "id": "D09,412",
+              "name": {
+                "value": "170th street"
+              }
+            },
+            {
+              "id": "A09,112",
+              "name": {
+                "value": "168th street",
+                "synonyms": [
+                  "168th and broadway",
+                  "168th street washington heights"
+                ]
+              }
+            },
+            {
+              "id": "D10,413",
+              "name": {
+                "value": "167th street"
+              }
+            },
+            {
+              "id": "D11,414",
+              "name": {
+                "value": "161th street yankee stadium",
+                "synonyms": [
+                  "yankee stadium",
+                  "161th street"
+                ]
+              }
+            },
+            {
+              "id": "D12,A11",
+              "name": {
+                "value": "155th street"
+              }
+            },
+            {
+              "id": "R20,L03,635",
+              "name": {
+                "value": "14th street union square",
+                "synonyms": [
+                  "14th and park",
+                  "14th and broadway",
+                  "union square"
+                ]
+              }
+            },
+            {
+              "id": "D19,132,A31,R20,L03,635",
+              "name": {
+                "value": "14th street"
+              }
+            },
+            {
+              "id": "222,415",
+              "name": {
+                "value": "149th street grand concourse",
+                "synonyms": [
+                  "149th street",
+                  "149th and concourse"
+                ]
+              }
+            },
+            {
+              "id": "114,302,D13,A12",
+              "name": {
+                "value": "145th street"
+              }
+            },
+            {
+              "id": "224,A14",
+              "name": {
+                "value": "135th street"
+              }
+            },
+            {
+              "id": "116,225,521,A15",
+              "name": {
+                "value": "125th street"
+              }
+            },
+            {
+              "id": "117,226,622",
+              "name": {
+                "value": "116th street"
+              }
+            },
+            {
+              "id": "J13,A64,705",
+              "name": {
+                "value": "111th street"
+              }
+            },
+            {
+              "id": "J14,A63",
+              "name": {
+                "value": "104th street"
+              }
+            },
+            {
+              "id": "119,A18,706,624",
+              "name": {
+                "value": "103rd street"
+              }
+            },
+            {
+              "id": "119",
+              "name": {
+                "value": "103rd street broadway",
+                "synonyms": [
+                  "103rd street broadway 7th avenue line",
+                  "103rd and broadway",
+                  "103rd street 1 train"
+                ]
+              }
+            },
+            {
+              "id": "A18",
+              "name": {
+                "value": "103rd street central park west",
+                "synonyms": [
+                  "103rd street 8th avenue line",
+                  "103rd street C train",
+                  "103rd street B train",
+                  "103rd and CPW",
+                  "103rd and central park west",
+                  "103rd street B and C trains"
+                ]
+              }
+            },
+            {
+              "id": "706",
+              "name": {
+                "value": "103rd street corona plaza",
+                "synonyms": [
+                  "103rd and roosevelt",
+                  "103rd street 7 train",
+                  "103rd street queens"
+                ]
+              }
+            },
+            {
+              "id": "624",
+              "name": {
+                "value": "103rd street lexington avenue",
+                "synonyms": [
+                  "103rd street 6 train",
+                  "103rd and lex",
+                  "103rd and lexington"
+                ]
+              }
+            },
+            {
+              "id": "J14",
+              "name": {
+                "value": "104th street jamaica avenue",
+                "synonyms": [
+                  "104th street BMT",
+                  "104th street Z train",
+                  "104th street J train",
+                  "104th street J and Z trains",
+                  "104th street jamaica line",
+                  "104th and jamaica"
+                ]
+              }
+            },
+            {
+              "id": "A63",
+              "name": {
+                "value": "104th street liberty avenue",
+                "synonyms": [
+                  "104th street IND",
+                  "104th street fulton street line",
+                  "104th street A train",
+                  "104th and liberty"
+                ]
+              }
+            },
+            {
+              "id": "623",
+              "name": {
+                "value": "110th street"
+              }
+            },
+            {
+              "id": "J13",
+              "name": {
+                "value": "111th street jamaica avenue",
+                "synonyms": [
+                  "111th street jamaica line",
+                  "111th street J train",
+                  "111th and jamaica"
+                ]
+              }
+            },
+            {
+              "id": "A64",
+              "name": {
+                "value": "111th street liberty avenue",
+                "synonyms": [
+                  "111th street fulton street line",
+                  "111th street A train",
+                  "111th and liberty"
+                ]
+              }
+            },
+            {
+              "id": "705",
+              "name": {
+                "value": "111th street roosevelt avenue",
+                "synonyms": [
+                  "111th street flushing line",
+                  "111th street 7 train",
+                  "111th and roosevelt"
+                ]
+              }
+            },
+            {
+              "id": "A16",
+              "name": {
+                "value": "116th street central park west",
+                "synonyms": [
+                  "116th street C train",
+                  "116th street B train",
+                  "116th street B and C trains",
+                  "116th and CPW",
+                  "116th and central park west"
+                ]
+              }
+            },
+            {
+              "id": "117",
+              "name": {
+                "value": "116th street columbia university"
+              }
+            },
+            {
+              "id": "226",
+              "name": {
+                "value": "116th street lenox avenue",
+                "synonyms": [
+                  "116th street 3 train",
+                  "116th street 2 train",
+                  "116th street 2 and 3 trains",
+                  "116th and malcolm x",
+                  "116th and lenox"
+                ]
+              }
+            },
+            {
+              "id": "622",
+              "name": {
+                "value": "116th street lexington avenue",
+                "synonyms": [
+                  "116th street 6 train",
+                  "116th and lex",
+                  "116th and lexington"
+                ]
+              }
+            },
+            {
+              "id": "J12",
+              "name": {
+                "value": "121st street"
+              }
+            },
+            {
+              "id": "116",
+              "name": {
+                "value": "125th street broadway",
+                "synonyms": [
+                  "125th street broadway 7th avenue line",
+                  "125th street 1 train",
+                  "125th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "225",
+              "name": {
+                "value": "125th street lenox avenue",
+                "synonyms": [
+                  "125th street 3 train",
+                  "125th street 2 train",
+                  "125th street 2 and 3 trains",
+                  "125th and malcolm x",
+                  "125th and lenox"
+                ]
+              }
+            },
+            {
+              "id": "621",
+              "name": {
+                "value": "125th street lexington avenue",
+                "synonyms": [
+                  "125th street 6 train",
+                  "125th street 5 train",
+                  "125th street 4 train",
+                  "125th street 4 5 and 6 trains",
+                  "125th and lexington",
+                  "125th and lex"
+                ]
+              }
+            },
+            {
+              "id": "A15",
+              "name": {
+                "value": "125th street saint nicholas avenue",
+                "synonyms": [
+                  "125th street D train",
+                  "125th street C train",
+                  "125th street B train",
+                  "125th street A train",
+                  "125th street A B C and D trains",
+                  "125th and saint nicholas",
+                  "125th and saint nick"
+                ]
+              }
+            },
+            {
+              "id": "224",
+              "name": {
+                "value": "135th street lenox avenue",
+                "synonyms": [
+                  "135th street 3 train",
+                  "135th street 2 train",
+                  "135th street 2 and 3 trains",
+                  "135th and malcolm x",
+                  "135th and lenox"
+                ]
+              }
+            },
+            {
+              "id": "A14",
+              "name": {
+                "value": "135th street saint nicholas avenue",
+                "synonyms": [
+                  "135th street C train",
+                  "135th street B train",
+                  "135th street B and C trains",
+                  "135th and saint nicholas",
+                  "135th and saint nick"
+                ]
+              }
+            },
+            {
+              "id": "115",
+              "name": {
+                "value": "137th street city college"
+              }
+            },
+            {
+              "id": "416",
+              "name": {
+                "value": "138th street grand concourse",
+                "synonyms": [
+                  "mott haven",
+                  "138th street mott haven"
+                ]
+              }
+            },
+            {
+              "id": "114",
+              "name": {
+                "value": "145th street broadway",
+                "synonyms": [
+                  "145th street broadway 7th avenue line",
+                  "145th street 1 train",
+                  "145th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "302",
+              "name": {
+                "value": "145th street lenox avenue",
+                "synonyms": [
+                  "145th street 3 train",
+                  "145th street 2 train",
+                  "145th street 2 and 3 trains",
+                  "145th and malcolm x",
+                  "145th and lenox"
+                ]
+              }
+            },
+            {
+              "id": "D13",
+              "name": {
+                "value": "145th street saint nicholas avenue lower level",
+                "synonyms": [
+                  "145th street saint nicholas avenue concourse line",
+                  "145th street saint nicholas avenue B and D trains",
+                  "145th street saint nicholas avenue D train",
+                  "145th street saint nicholas avenue B train",
+                  "145th and saint nick lower level"
+                ]
+              }
+            },
+            {
+              "id": "A12",
+              "name": {
+                "value": "145th street saint nicholas avenue upper level",
+                "synonyms": [
+                  "145th street saint nicholas avenue 8th avenue line",
+                  "145th street saint nicholas avenue C train",
+                  "145th street saint nicholas avenue A train",
+                  "145th street saint nicholas avenue A and C trains",
+                  "145th and saint nick upper level"
+                ]
+              }
+            },
+            {
+              "id": "222",
+              "name": {
+                "value": "149th street grand concourse lower level",
+                "synonyms": [
+                  "149th street grand concourse 5 train",
+                  "149th street grand concourse 2 train",
+                  "149th street grand concourse 2 and 5 trains",
+                  "149th street grand concourse white plains road line"
+                ]
+              }
+            },
+            {
+              "id": "415",
+              "name": {
+                "value": "149th street grand concourse upper level",
+                "synonyms": [
+                  "149th street grand concourse 4 train",
+                  "149th street grand concourse jerome avenue line"
+                ]
+              }
+            },
+            {
+              "id": "D19",
+              "name": {
+                "value": "14th street 6th avenue",
+                "synonyms": [
+                  "14th street M train",
+                  "14th street F train",
+                  "14th street F and M trains",
+                  "14th and 6th"
+                ]
+              }
+            },
+            {
+              "id": "132",
+              "name": {
+                "value": "14th street 7th avenue",
+                "synonyms": [
+                  "14th street 3 train",
+                  "14th street 2 train",
+                  "14th street 1 train",
+                  "14th street 1 2 and 3 trains",
+                  "14th and 7th"
+                ]
+              }
+            },
+            {
+              "id": "A31",
+              "name": {
+                "value": "14th street 8th avenue",
+                "synonyms": [
+                  "14th street E train",
+                  "14th street C train",
+                  "14th street A train",
+                  "14th street A C and E trains",
+                  "14th and 8th"
+                ]
+              }
+            },
+            {
+              "id": "R20",
+              "name": {
+                "value": "14th street union square broadway line",
+                "synonyms": [
+                  "14th street union square W train",
+                  "14th street union square R train",
+                  "14th street union square Q train",
+                  "14th street union square N train",
+                  "union square N Q R and W trains",
+                  "14th street union square N Q R and W trains",
+                  "union square broadway line"
+                ]
+              }
+            },
+            {
+              "id": "L03",
+              "name": {
+                "value": "14th street union square canarsie line",
+                "synonyms": [
+                  "union square L train",
+                  "14th street union square L train",
+                  "union square canarsie line"
+                ]
+              }
+            },
+            {
+              "id": "635",
+              "name": {
+                "value": "14th street union square lexington avenue line",
+                "synonyms": [
+                  "union square 4 5 6 trains",
+                  "14th street union square 6 train",
+                  "14th street union square 5 train",
+                  "14th street union square 4 train",
+                  "union square 4 5 and 6 trains",
+                  "14th street union square 4 5 and 6 trains",
+                  "union square lexington avenue line"
+                ]
+              }
+            },
+            {
+              "id": "D12",
+              "name": {
+                "value": "155th street frederick douglass boulevard",
+                "synonyms": [
+                  "155th street 8th avenue",
+                  "155th street D train",
+                  "155th street B train",
+                  "155th street B and D trains",
+                  "155th street concourse line",
+                  "155th and frederick douglass",
+                  "155th and 8th"
+                ]
+              }
+            },
+            {
+              "id": "A11",
+              "name": {
+                "value": "155th street saint nicholas avenue",
+                "synonyms": [
+                  "155th street 8th avenue line",
+                  "155th street C train",
+                  "155th and saint nicholas",
+                  "155th and saint nick"
+                ]
+              }
+            },
+            {
+              "id": "113",
+              "name": {
+                "value": "157th street"
+              }
+            },
+            {
+              "id": "F25",
+              "name": {
+                "value": "15th street prospect park"
+              }
+            },
+            {
+              "id": "D11",
+              "name": {
+                "value": "161st street yankee stadium concourse line",
+                "synonyms": [
+                  "161st street yankee stadium IND",
+                  "yankee stadium IND",
+                  "161st street yankee stadium D train",
+                  "161st street yankee stadium B train",
+                  "yankee stadium B and D trains",
+                  "161st street yankee stadium B and D trains",
+                  "yankee stadium concourse line"
+                ]
+              }
+            },
+            {
+              "id": "414",
+              "name": {
+                "value": "161st street yankee stadium jerome avenue line",
+                "synonyms": [
+                  "161st street yankee stadium IRT",
+                  "yankee stadium IRT",
+                  "yankee stadium 4 train",
+                  "161st street yankee stadium 4 train",
+                  "yankee stadium jerome avenue line"
+                ]
+              }
+            },
+            {
+              "id": "A10",
+              "name": {
+                "value": "163rd street amsterdam avenue"
+              }
+            },
+            {
+              "id": "D10",
+              "name": {
+                "value": "167th street grand concourse",
+                "synonyms": [
+                  "167th street D train",
+                  "167th street B train",
+                  "167th street B and D trains",
+                  "167th street concourse line",
+                  "167th and concourse"
+                ]
+              }
+            },
+            {
+              "id": "413",
+              "name": {
+                "value": "167th street river avenue",
+                "synonyms": [
+                  "167th street jerome avenue line",
+                  "167th street 4 train",
+                  "167th and river"
+                ]
+              }
+            },
+            {
+              "id": "A09",
+              "name": {
+                "value": "168th street 8th avenue line",
+                "synonyms": [
+                  "168th street C train",
+                  "168th street A train",
+                  "168th street A and C trains",
+                  "168th street IND"
+                ]
+              }
+            },
+            {
+              "id": "112",
+              "name": {
+                "value": "168th street broadway 7th avenue line",
+                "synonyms": [
+                  "168th street IRT",
+                  "168th street 7th avenue line",
+                  "168th street 1 train"
+                ]
+              }
+            },
+            {
+              "id": "F02",
+              "name": {
+                "value": "169th street"
+              }
+            },
+            {
+              "id": "D09",
+              "name": {
+                "value": "170th street grand concourse",
+                "synonyms": [
+                  "170th street D train",
+                  "170th street B train",
+                  "170th street B and D trains",
+                  "170th and concourse"
+                ]
+              }
+            },
+            {
+              "id": "412",
+              "name": {
+                "value": "170th street jerome avenue",
+                "synonyms": [
+                  "170th street 4 train",
+                  "170th and jerome"
+                ]
+              }
+            },
+            {
+              "id": "D08",
+              "name": {
+                "value": "174th 175th streets",
+                "synonyms": [
+                  "174th and 175th",
+                  "174th 175th"
+                ]
+              }
+            },
+            {
+              "id": "215",
+              "name": {
+                "value": "174th street"
+              }
+            },
+            {
+              "id": "A07",
+              "name": {
+                "value": "175th street"
+              }
+            },
+            {
+              "id": "410",
+              "name": {
+                "value": "176th street"
+              }
+            },
+            {
+              "id": "A06",
+              "name": {
+                "value": "181st street fort washington avenue",
+                "synonyms": [
+                  "181st street 8th avenue line",
+                  "181st and fort washington",
+                  "181st and fort wash",
+                  "181st street A train",
+                  "181st street IND"
+                ]
+              }
+            },
+            {
+              "id": "111",
+              "name": {
+                "value": "181st street saint nicholas avenue",
+                "synonyms": [
+                  "181st street broadway 7th avenue line",
+                  "181st and saint nick",
+                  "181st and saint nicholas",
+                  "181st street IRT",
+                  "181st street 1 train"
+                ]
+              }
+            },
+            {
+              "id": "D06",
+              "name": {
+                "value": "182nd 183rd streets"
+              }
+            },
+            {
+              "id": "408",
+              "name": {
+                "value": "183rd street"
+              }
+            },
+            {
+              "id": "N05",
+              "name": {
+                "value": "18th avenue 64th street",
+                "synonyms": [
+                  "18th avenue N train",
+                  "18th avenue sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "F30",
+              "name": {
+                "value": "18th avenue mcdonald avenue",
+                "synonyms": [
+                  "18th avenue F train",
+                  "18th avenue culver line"
+                ]
+              }
+            },
+            {
+              "id": "B19",
+              "name": {
+                "value": "18th avenue new utrecht avenue",
+                "synonyms": [
+                  "18th avenue D train",
+                  "18th avenue west end line"
+                ]
+              }
+            },
+            {
+              "id": "131",
+              "name": {
+                "value": "18th street"
+              }
+            },
+            {
+              "id": "A05",
+              "name": {
+                "value": "190th street"
+              }
+            },
+            {
+              "id": "110",
+              "name": {
+                "value": "191st street"
+              }
+            },
+            {
+              "id": "L06",
+              "name": {
+                "value": "1st avenue"
+              }
+            },
+            {
+              "id": "108",
+              "name": {
+                "value": "207th street"
+              }
+            },
+            {
+              "id": "N06",
+              "name": {
+                "value": "20th avenue 64th street",
+                "synonyms": [
+                  "20th avenue N train",
+                  "20th avenue sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "B20",
+              "name": {
+                "value": "20th avenue new utrecht avenue",
+                "synonyms": [
+                  "20th avenue D train",
+                  "20th avenue west end line"
+                ]
+              }
+            },
+            {
+              "id": "107",
+              "name": {
+                "value": "215th street"
+              }
+            },
+            {
+              "id": "207",
+              "name": {
+                "value": "219th street"
+              }
+            },
+            {
+              "id": "G24",
+              "name": {
+                "value": "21st street",
+                "synonyms": [
+                  "21st street G train",
+                  "21st street crosstown line",
+                  "21st street van alst"
+                ]
+              }
+            },
+            {
+              "id": "B04",
+              "name": {
+                "value": "21st street queensbridge",
+                "synonyms": [
+                  "21st street 63rd street line",
+                  "21st street F train"
+                ]
+              }
+            },
+            {
+              "id": "206",
+              "name": {
+                "value": "225th street"
+              }
+            },
+            {
+              "id": "104",
+              "name": {
+                "value": "231st street"
+              }
+            },
+            {
+              "id": "205",
+              "name": {
+                "value": "233rd street"
+              }
+            },
+            {
+              "id": "103",
+              "name": {
+                "value": "238th street"
+              }
+            },
+            {
+              "id": "D18",
+              "name": {
+                "value": "23rd street 6th avenue",
+                "synonyms": [
+                  "23rd street M train",
+                  "23rd street F train",
+                  "23rd street F and M trains",
+                  "23rd and 6th"
+                ]
+              }
+            },
+            {
+              "id": "130",
+              "name": {
+                "value": "23rd street 7th avenue",
+                "synonyms": [
+                  "23rd street 1 train",
+                  "23rd and 7th"
+                ]
+              }
+            },
+            {
+              "id": "A30",
+              "name": {
+                "value": "23rd street 8th avenue",
+                "synonyms": [
+                  "23rd street A train",
+                  "23rd street E train",
+                  "23rd street C train",
+                  "23rd street C and E trains",
+                  "23rd and 8th"
+                ]
+              }
+            },
+            {
+              "id": "R19",
+              "name": {
+                "value": "23rd street broadway",
+                "synonyms": [
+                  "23rd street Q train",
+                  "23rd street N train",
+                  "23rd street W train",
+                  "23rd street R train",
+                  "23rd street R and W trains",
+                  "23rd and broadway"
+                ]
+              }
+            },
+            {
+              "id": "634",
+              "name": {
+                "value": "23rd street park avenue south",
+                "synonyms": [
+                  "23rd street 6 train",
+                  "23rd street lex avenue line",
+                  "23rd street lexington avenue line",
+                  "23rd and park"
+                ]
+              }
+            },
+            {
+              "id": "B22",
+              "name": {
+                "value": "25th avenue"
+              }
+            },
+            {
+              "id": "R35",
+              "name": {
+                "value": "25th street"
+              }
+            },
+            {
+              "id": "129",
+              "name": {
+                "value": "28th street 7th avenue",
+                "synonyms": [
+                  "28th street 1 train",
+                  "28th and 7th"
+                ]
+              }
+            },
+            {
+              "id": "R18",
+              "name": {
+                "value": "28th street broadway",
+                "synonyms": [
+                  "28th street W train",
+                  "28th street R train",
+                  "28th street Q train",
+                  "28th street N train",
+                  "28th street R and W trains",
+                  "28th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "633",
+              "name": {
+                "value": "28th street park avenue south",
+                "synonyms": [
+                  "28th street 6 train",
+                  "28th street lexington avenue line",
+                  "28th and park"
+                ]
+              }
+            },
+            {
+              "id": "F14",
+              "name": {
+                "value": "2nd avenue"
+              }
+            },
+            {
+              "id": "R04",
+              "name": {
+                "value": "30th avenue"
+              }
+            },
+            {
+              "id": "632",
+              "name": {
+                "value": "33rd street",
+                "synonyms": [
+                  "33rd street 6 train",
+                  "33rd and park",
+                  "33rd street park avenue south"
+                ]
+              }
+            },
+            {
+              "id": "716",
+              "name": {
+                "value": "33rd street rawson street",
+                "synonyms": [
+                  "33rd street flushing line",
+                  "33rd street 7 train",
+                  "33rd street queens"
+                ]
+              }
+            },
+            {
+              "id": "D17",
+              "name": {
+                "value": "34th street herald square 6th avenue line",
+                "synonyms": [
+                  "herald square IND",
+                  "34th street herald square IND",
+                  "34th street herald square M train",
+                  "34th street herald square F train",
+                  "34th street herald square D train",
+                  "34th street herald square B train",
+                  "herald square B D F and M trains",
+                  "34th street herald square B D F and M trains",
+                  "herald square lower level",
+                  "34th street herald square lower level",
+                  "herald square 6th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "R17",
+              "name": {
+                "value": "34th street herald square broadway line",
+                "synonyms": [
+                  "herald square BMT",
+                  "34th street herald square BMT",
+                  "34th street herald square W train",
+                  "34th street herald square R train",
+                  "34th street herald square Q train",
+                  "34th street herald square N train",
+                  "34th street herald square N Q R and W trains",
+                  "herald square upper level",
+                  "34th street herald square upper level",
+                  "herald square broadway line"
+                ]
+              }
+            },
+            {
+              "id": "726",
+              "name": {
+                "value": "34th street hudson yards",
+                "synonyms": [
+                  "34th street 7 train",
+                  "34th street 11th avenue",
+                  "34th and 11th",
+                  "hudson yards"
+                ]
+              }
+            },
+            {
+              "id": "128",
+              "name": {
+                "value": "34th street penn station 7th avenue",
+                "synonyms": [
+                  "34th street penn station 3 train",
+                  "34th street penn station 2 train",
+                  "34th street penn station 1 train",
+                  "34th street penn station 1 2 and 3 trains",
+                  "34th street 7th avenue",
+                  "34th street penn station IRT",
+                  "penn station IRT",
+                  "34th and 7th"
+                ]
+              }
+            },
+            {
+              "id": "A28",
+              "name": {
+                "value": "34th street penn station 8th avenue",
+                "synonyms": [
+                  "34th street penn station E train",
+                  "34th street penn station C train",
+                  "34th street penn station A train",
+                  "34th street penn station A C and E trains",
+                  "34th street 8th avenue",
+                  "34th street penn station IND",
+                  "penn station IND",
+                  "34th and 8th"
+                ]
+              }
+            },
+            {
+              "id": "R06",
+              "name": {
+                "value": "36th avenue"
+              }
+            },
+            {
+              "id": "R36",
+              "name": {
+                "value": "36th street 4th avenue",
+                "synonyms": [
+                  "36th street D train",
+                  "36th street N train",
+                  "36th street brooklyn"
+                ]
+              }
+            },
+            {
+              "id": "G20",
+              "name": {
+                "value": "36th street northern boulevard",
+                "synonyms": [
+                  "36th street queens"
+                ]
+              }
+            },
+            {
+              "id": "R08",
+              "name": {
+                "value": "39th avenue"
+              }
+            },
+            {
+              "id": "L05",
+              "name": {
+                "value": "3rd avenue"
+              }
+            },
+            {
+              "id": "619",
+              "name": {
+                "value": "3rd avenue 138th street"
+              }
+            },
+            {
+              "id": "221",
+              "name": {
+                "value": "3rd avenue 149th street"
+              }
+            },
+            {
+              "id": "715",
+              "name": {
+                "value": "40th street lowery street",
+                "synonyms": [
+                  "40th street"
+                ]
+              }
+            },
+            {
+              "id": "D16",
+              "name": {
+                "value": "42nd street bryant park",
+                "synonyms": [
+                  "bryant park"
+                ]
+              }
+            },
+            {
+              "id": "A27",
+              "name": {
+                "value": "42nd street port authority bus terminal",
+                "synonyms": [
+                  "port authority"
+                ]
+              }
+            },
+            {
+              "id": "R39",
+              "name": {
+                "value": "45th street"
+              }
+            },
+            {
+              "id": "714",
+              "name": {
+                "value": "46th street bliss street",
+                "synonyms": [
+                  "46th street queens boulevard",
+                  "46th street 7 train"
+                ]
+              }
+            },
+            {
+              "id": "G18",
+              "name": {
+                "value": "46th street broadway",
+                "synonyms": [
+                  "46th street R train",
+                  "46th street M train",
+                  "46th street M and R trains"
+                ]
+              }
+            },
+            {
+              "id": "D15",
+              "name": {
+                "value": "47th 50th streets rockefeller center",
+                "synonyms": [
+                  "rock center",
+                  "rockefeller center"
+                ]
+              }
+            },
+            {
+              "id": "R15",
+              "name": {
+                "value": "49th street"
+              }
+            },
+            {
+              "id": "F23",
+              "name": {
+                "value": "4th avenue"
+              }
+            },
+            {
+              "id": "126",
+              "name": {
+                "value": "50th street 7th avenue",
+                "synonyms": [
+                  "50th street 1 train",
+                  "50th and 7th",
+                  "50th street IRT"
+                ]
+              }
+            },
+            {
+              "id": "A25",
+              "name": {
+                "value": "50th street 8th avenue",
+                "synonyms": [
+                  "50th street A train",
+                  "50th street E train",
+                  "50th street C train",
+                  "50th street C and E trains",
+                  "50th and 8th",
+                  "50th street IND"
+                ]
+              }
+            },
+            {
+              "id": "B14",
+              "name": {
+                "value": "50th street new utrecht avenue",
+                "synonyms": [
+                  "50th street D train",
+                  "50th street west end line",
+                  "50th street BMT",
+                  "50th street brooklyn",
+                  "50th and new utrecht"
+                ]
+              }
+            },
+            {
+              "id": "630",
+              "name": {
+                "value": "51st street"
+              }
+            },
+            {
+              "id": "713",
+              "name": {
+                "value": "52nd street"
+              }
+            },
+            {
+              "id": "R40",
+              "name": {
+                "value": "53rd street"
+              }
+            },
+            {
+              "id": "B15",
+              "name": {
+                "value": "55th street"
+              }
+            },
+            {
+              "id": "B10",
+              "name": {
+                "value": "57th street",
+                "synonyms": [
+                  "57th street F train",
+                  "57th street IND",
+                  "57th street 6th avenue",
+                  "57th and 6th"
+                ]
+              }
+            },
+            {
+              "id": "R14",
+              "name": {
+                "value": "57th street 7th avenue",
+                "synonyms": [
+                  "57 street W train",
+                  "57 street R train",
+                  "57 street Q train",
+                  "57 street N train",
+                  "57 street N Q R and W trains",
+                  "57th street broadway line",
+                  "57th street BMT",
+                  "57th street midtown",
+                  "57th and 7th"
+                ]
+              }
+            },
+            {
+              "id": "R41",
+              "name": {
+                "value": "59th street 4th avenue",
+                "synonyms": [
+                  "59th street R train",
+                  "59th street N train",
+                  "59th street N and R trains",
+                  "59th street brooklyn",
+                  "59th and 4th"
+                ]
+              }
+            },
+            {
+              "id": "A24",
+              "name": {
+                "value": "59th street columbus circle 8th avenue line",
+                "synonyms": [
+                  "columbus circle A B C and D trains",
+                  "59th street columbus circle D train",
+                  "59th street columbus circle C train",
+                  "59th street columbus circle B train",
+                  "59th street columbus circle A train",
+                  "59th street columbus circle IND",
+                  "59th street columbus circle A B C and D trains",
+                  "columbus circle 8th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "125",
+              "name": {
+                "value": "59th street columbus circle broadway 7th avenue line",
+                "synonyms": [
+                  "columbus circle 1 train",
+                  "columbus circle broadway line",
+                  "59th street columbus circle IRT",
+                  "59th street columbus circle 1 train",
+                  "59th street columbus circle 7th avenue line",
+                  "columbus circle 7th avenue line",
+                  "columbus circle broadway 7th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "629",
+              "name": {
+                "value": "59th street lexington avenue",
+                "synonyms": [
+                  "59th and lexington",
+                  "59th street 6 train",
+                  "59th street 5 train",
+                  "59th street 4 train",
+                  "59th street 4 5 and 6 trains",
+                  "59th and lex"
+                ]
+              }
+            },
+            {
+              "id": "724",
+              "name": {
+                "value": "5th avenue",
+                "synonyms": [
+                  "5th avenue 7 train",
+                  "5th avenue bryant park"
+                ]
+              }
+            },
+            {
+              "id": "F12",
+              "name": {
+                "value": "5th avenue 53rd street"
+              }
+            },
+            {
+              "id": "R13",
+              "name": {
+                "value": "5th avenue 59th street"
+              }
+            },
+            {
+              "id": "B16",
+              "name": {
+                "value": "62nd street"
+              }
+            },
+            {
+              "id": "G10",
+              "name": {
+                "value": "63rd drive rego park"
+              }
+            },
+            {
+              "id": "G15",
+              "name": {
+                "value": "65th street"
+              }
+            },
+            {
+              "id": "124",
+              "name": {
+                "value": "66th street lincoln center"
+              }
+            },
+            {
+              "id": "G09",
+              "name": {
+                "value": "67th avenue"
+              }
+            },
+            {
+              "id": "628",
+              "name": {
+                "value": "68th street hunter college"
+              }
+            },
+            {
+              "id": "711",
+              "name": {
+                "value": "69th street"
+              }
+            },
+            {
+              "id": "L02",
+              "name": {
+                "value": "6th avenue"
+              }
+            },
+            {
+              "id": "B17",
+              "name": {
+                "value": "71st street"
+              }
+            },
+            {
+              "id": "Q03",
+              "name": {
+                "value": "72nd street 2nd avenue",
+                "synonyms": [
+                  "72nd street Q train",
+                  "72nd and 2nd"
+                ]
+              }
+            },
+            {
+              "id": "123",
+              "name": {
+                "value": "72nd street broadway",
+                "synonyms": [
+                  "72nd street 7th avenue line",
+                  "72nd street 3 train",
+                  "72nd street 2 train",
+                  "72nd street 1 train",
+                  "72nd street 1 2 and 3 trains",
+                  "72nd street IRT",
+                  "72nd and broadway"
+                ]
+              }
+            },
+            {
+              "id": "A22",
+              "name": {
+                "value": "72nd street central park west",
+                "synonyms": [
+                  "72nd street A train",
+                  "72nd street C train",
+                  "72nd street B train",
+                  "72nd street B and C trains",
+                  "72nd and CPW",
+                  "72nd and central park west"
+                ]
+              }
+            },
+            {
+              "id": "710",
+              "name": {
+                "value": "74th street broadway"
+              }
+            },
+            {
+              "id": "F07",
+              "name": {
+                "value": "75th avenue"
+              }
+            },
+            {
+              "id": "J17",
+              "name": {
+                "value": "75th street elderts lane",
+                "synonyms": [
+                  "75th street"
+                ]
+              }
+            },
+            {
+              "id": "R43",
+              "name": {
+                "value": "77th street 4th avenue",
+                "synonyms": [
+                  "77th street brooklyn",
+                  "77th street R train"
+                ]
+              }
+            },
+            {
+              "id": "627",
+              "name": {
+                "value": "77th street lexington avenue",
+                "synonyms": [
+                  "77th street 6 train",
+                  "77th and lexington",
+                  "77th and lex",
+                  "77th street manhattan"
+                ]
+              }
+            },
+            {
+              "id": "122",
+              "name": {
+                "value": "79th street broadway",
+                "synonyms": [
+                  "79th street 7th avenue line",
+                  "79th street manhattan",
+                  "79th street IRT",
+                  "79th street 1 train",
+                  "79th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "B18",
+              "name": {
+                "value": "79th street new utrecht avenue",
+                "synonyms": [
+                  "79th street brooklyn",
+                  "79th street west end line",
+                  "79th street BMT",
+                  "79th street D train",
+                  "79th and new utrecht"
+                ]
+              }
+            },
+            {
+              "id": "D14",
+              "name": {
+                "value": "7th avenue 53rd street",
+                "synonyms": [
+                  "7th avenue 8th avenue line",
+                  "7th avenue 6th avenue line",
+                  "7th avenue queens boulevard line",
+                  "7th avenue IND"
+                ]
+              }
+            },
+            {
+              "id": "F24",
+              "name": {
+                "value": "7th avenue 9th street",
+                "synonyms": [
+                  "7th avenue culver line",
+                  "7th avenue G train",
+                  "7th avenue F train",
+                  "7th avenue F and G trains",
+                  "7th avenue park slope",
+                  "7th and 9th"
+                ]
+              }
+            },
+            {
+              "id": "D25",
+              "name": {
+                "value": "7th avenue flatbush avenue",
+                "synonyms": [
+                  "7th avenue brighton line",
+                  "7th avenue Q train",
+                  "7th avenue B train",
+                  "7th avenue B and Q trains",
+                  "7th and flatbush"
+                ]
+              }
+            },
+            {
+              "id": "A59",
+              "name": {
+                "value": "80th street"
+              }
+            },
+            {
+              "id": "A21",
+              "name": {
+                "value": "81st street museum of natural history"
+              }
+            },
+            {
+              "id": "709",
+              "name": {
+                "value": "82nd street jackson heights"
+              }
+            },
+            {
+              "id": "J16",
+              "name": {
+                "value": "85th street forest parkway"
+              }
+            },
+            {
+              "id": "Q04",
+              "name": {
+                "value": "86th street 2nd avenue",
+                "synonyms": [
+                  "86th street Q train",
+                  "86th and 2nd"
+                ]
+              }
+            },
+            {
+              "id": "R44",
+              "name": {
+                "value": "86th street 4th avenue",
+                "synonyms": [
+                  "86th street R train",
+                  "86th and 4th"
+                ]
+              }
+            },
+            {
+              "id": "121",
+              "name": {
+                "value": "86th street broadway",
+                "synonyms": [
+                  "86th street 1 train",
+                  "86th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "A20",
+              "name": {
+                "value": "86th street central park west",
+                "synonyms": [
+                  "86th street A train",
+                  "86th street C train",
+                  "86th street B train",
+                  "86th street B and C trains",
+                  "86th and CPW",
+                  "86th and central park west"
+                ]
+              }
+            },
+            {
+              "id": "626",
+              "name": {
+                "value": "86th street lexington avenue",
+                "synonyms": [
+                  "86th street 6 train",
+                  "86th street 5 train",
+                  "86th street 4 train",
+                  "86th street 4 5 and 6 trains",
+                  "86th and lexington",
+                  "86th and lex"
+                ]
+              }
+            },
+            {
+              "id": "N10",
+              "name": {
+                "value": "86th street west 7th street",
+                "synonyms": [
+                  "gravesend 86th street",
+                  "86th street N train",
+                  "86th street sea beach line",
+                  "86th and west 7th"
+                ]
+              }
+            },
+            {
+              "id": "A60",
+              "name": {
+                "value": "88th street"
+              }
+            },
+            {
+              "id": "L01",
+              "name": {
+                "value": "8th avenue 14th street",
+                "synonyms": [
+                  "8th avenue manhattan",
+                  "8th avenue L train"
+                ]
+              }
+            },
+            {
+              "id": "N02",
+              "name": {
+                "value": "8th avenue 62nd street",
+                "synonyms": [
+                  "8th avenue sea beach line",
+                  "8th avenue N train",
+                  "8th avenue sunset park",
+                  "8th avenue brooklyn"
+                ]
+              }
+            },
+            {
+              "id": "R21",
+              "name": {
+                "value": "8th street nyu"
+              }
+            },
+            {
+              "id": "708",
+              "name": {
+                "value": "90th street elmhurst avenue"
+              }
+            },
+            {
+              "id": "Q05",
+              "name": {
+                "value": "96th street 2nd avenue",
+                "synonyms": [
+                  "96th street Q train",
+                  "96th and 2nd"
+                ]
+              }
+            },
+            {
+              "id": "120",
+              "name": {
+                "value": "96th street broadway",
+                "synonyms": [
+                  "96th street 3 train",
+                  "96th street 2 train",
+                  "96th street 1 train",
+                  "96th street 1 2 and 3 trains",
+                  "96th street 7th avenue line",
+                  "96th and broadway"
+                ]
+              }
+            },
+            {
+              "id": "A19",
+              "name": {
+                "value": "96th street central park west",
+                "synonyms": [
+                  "96th street A train",
+                  "96th and CPW",
+                  "96th and central park west",
+                  "96th street C train",
+                  "96th street B train",
+                  "96th street B and C trains"
+                ]
+              }
+            },
+            {
+              "id": "625",
+              "name": {
+                "value": "96th street lexington avenue",
+                "synonyms": [
+                  "96th street 6 train",
+                  "96th and lexington",
+                  "96th and lex"
+                ]
+              }
+            },
+            {
+              "id": "B12",
+              "name": {
+                "value": "9th avenue"
+              }
+            },
+            {
+              "id": "R33",
+              "name": {
+                "value": "9th street"
+              }
+            },
+            {
+              "id": "J24",
+              "name": {
+                "value": "alabama avenue"
+              }
+            },
+            {
+              "id": "210",
+              "name": {
+                "value": "allerton avenue"
+              }
+            },
+            {
+              "id": "S17",
+              "name": {
+                "value": "annadale"
+              }
+            },
+            {
+              "id": "H02",
+              "name": {
+                "value": "aqueduct north conduit avenue",
+                "synonyms": [
+                  "aqueduct"
+                ]
+              }
+            },
+            {
+              "id": "H01",
+              "name": {
+                "value": "aqueduct racetrack"
+              }
+            },
+            {
+              "id": "S11",
+              "name": {
+                "value": "arthur kill"
+              }
+            },
+            {
+              "id": "636",
+              "name": {
+                "value": "astor place"
+              }
+            },
+            {
+              "id": "R03",
+              "name": {
+                "value": "astoria boulevard"
+              }
+            },
+            {
+              "id": "R01",
+              "name": {
+                "value": "astoria ditmars boulevard",
+                "synonyms": [
+                  "ditmars boulevard"
+                ]
+              }
+            },
+            {
+              "id": "S10",
+              "name": {
+                "value": "atlantic"
+              }
+            },
+            {
+              "id": "L24",
+              "name": {
+                "value": "atlantic avenue",
+                "synonyms": [
+                  "atlantic avenue L train"
+                ]
+              }
+            },
+            {
+              "id": "R31",
+              "name": {
+                "value": "atlantic avenue barclays center 4th avenue line",
+                "synonyms": [
+                  "atlantic avenue barclays center R train",
+                  "atlantic avenue barclays center N train",
+                  "atlantic avenue barclays center D train",
+                  "barclays center D N and R trains",
+                  "atlantic avenue D N and R trains",
+                  "atlantic avenue barclays center D N and R trains",
+                  "pacific street",
+                  "atlantic avenue pacific street",
+                  "barclays center 4th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "D24",
+              "name": {
+                "value": "atlantic avenue barclays center brighton line",
+                "synonyms": [
+                  "atlantic avenue barclays center Q train",
+                  "atlantic avenue barclays center B train",
+                  "atlantic avenue B and Q trains",
+                  "barclays center B and Q trains",
+                  "atlantic avenue barclays center B and Q trains",
+                  "barclays center brighton line"
+                ]
+              }
+            },
+            {
+              "id": "235",
+              "name": {
+                "value": "atlantic avenue barclays center eastern parkway line",
+                "synonyms": [
+                  "atlantic avenue barclays center 5 train",
+                  "atlantic avenue barclays center 4 train",
+                  "atlantic avenue barclays center 3 train",
+                  "atlantic avenue barclays center 2 train",
+                  "atlantic avenue 2 3 4 and 5 trains",
+                  "barclays center 2 3 4 and 5 trains",
+                  "atlantic avenue barclays center 2 3 4 and 5 trains",
+                  "barclays center eastern parkway line"
+                ]
+              }
+            },
+            {
+              "id": "D32",
+              "name": {
+                "value": "avenue h"
+              }
+            },
+            {
+              "id": "F31",
+              "name": {
+                "value": "avenue i"
+              }
+            },
+            {
+              "id": "D33",
+              "name": {
+                "value": "avenue j"
+              }
+            },
+            {
+              "id": "D34",
+              "name": {
+                "value": "avenue m"
+              }
+            },
+            {
+              "id": "F33",
+              "name": {
+                "value": "avenue n"
+              }
+            },
+            {
+              "id": "F34",
+              "name": {
+                "value": "avenue p"
+              }
+            },
+            {
+              "id": "D37",
+              "name": {
+                "value": "avenue u east 16th street",
+                "synonyms": [
+                  "avenue u Q train",
+                  "avenue u brighton line"
+                ]
+              }
+            },
+            {
+              "id": "F36",
+              "name": {
+                "value": "avenue u mcdonald avenue",
+                "synonyms": [
+                  "avenue u F train",
+                  "avenue u culver line"
+                ]
+              }
+            },
+            {
+              "id": "N09",
+              "name": {
+                "value": "avenue u west 7th street",
+                "synonyms": [
+                  "avenue u N train",
+                  "avenue u sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "F38",
+              "name": {
+                "value": "avenue x"
+              }
+            },
+            {
+              "id": "B23",
+              "name": {
+                "value": "bay 50th street"
+              }
+            },
+            {
+              "id": "B21",
+              "name": {
+                "value": "bay parkway 86th street",
+                "synonyms": [
+                  "bay parkway D train",
+                  "bay parkway west end line"
+                ]
+              }
+            },
+            {
+              "id": "N07",
+              "name": {
+                "value": "bay parkway avenue o",
+                "synonyms": [
+                  "bay parkway N train",
+                  "bay parkway sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "F32",
+              "name": {
+                "value": "bay parkway mcdonald avenue",
+                "synonyms": [
+                  "bay parkway F train",
+                  "bay parkway culver line"
+                ]
+              }
+            },
+            {
+              "id": "R45",
+              "name": {
+                "value": "bay ridge 95th street",
+                "synonyms": [
+                  "95th street"
+                ]
+              }
+            },
+            {
+              "id": "R42",
+              "name": {
+                "value": "bay ridge avenue"
+              }
+            },
+            {
+              "id": "S20",
+              "name": {
+                "value": "bay terrace"
+              }
+            },
+            {
+              "id": "502",
+              "name": {
+                "value": "baychester avenue"
+              }
+            },
+            {
+              "id": "H14",
+              "name": {
+                "value": "beach 105th street"
+              }
+            },
+            {
+              "id": "H10",
+              "name": {
+                "value": "beach 25th street"
+              }
+            },
+            {
+              "id": "H09",
+              "name": {
+                "value": "beach 36th street"
+              }
+            },
+            {
+              "id": "H08",
+              "name": {
+                "value": "beach 44th street"
+              }
+            },
+            {
+              "id": "H07",
+              "name": {
+                "value": "beach 60th street"
+              }
+            },
+            {
+              "id": "H06",
+              "name": {
+                "value": "beach 67th street"
+              }
+            },
+            {
+              "id": "H12",
+              "name": {
+                "value": "beach 90th street"
+              }
+            },
+            {
+              "id": "H13",
+              "name": {
+                "value": "beach 98th street"
+              }
+            },
+            {
+              "id": "L08",
+              "name": {
+                "value": "bedford avenue"
+              }
+            },
+            {
+              "id": "G33",
+              "name": {
+                "value": "bedford nostrand avenues",
+                "synonyms": [
+                  "bedford nordstrom avenues"
+                ]
+              }
+            },
+            {
+              "id": "D03",
+              "name": {
+                "value": "bedford park boulevard"
+              }
+            },
+            {
+              "id": "405",
+              "name": {
+                "value": "bedford park boulevard lehman college"
+              }
+            },
+            {
+              "id": "236",
+              "name": {
+                "value": "bergen street flatbush avenue",
+                "synonyms": [
+                  "bergen street IRT",
+                  "bergen street eastern parkway line",
+                  "bergen street 3 train",
+                  "bergen street 2 train",
+                  "bergen street 2 and 3 trains"
+                ]
+              }
+            },
+            {
+              "id": "F20",
+              "name": {
+                "value": "bergen street smith street",
+                "synonyms": [
+                  "bergen street IND",
+                  "bergen street culver line",
+                  "bergen street G train",
+                  "bergen street F train",
+                  "bergen street F and G trains"
+                ]
+              }
+            },
+            {
+              "id": "D29",
+              "name": {
+                "value": "beverley road east 16th street",
+                "synonyms": [
+                  "beverley road BMT",
+                  "beverley road Q train",
+                  "beverley road brighton line"
+                ]
+              }
+            },
+            {
+              "id": "245",
+              "name": {
+                "value": "beverly road nostrand avenue",
+                "synonyms": [
+                  "beverly road nordstrom avenue",
+                  "beverly road 5 train",
+                  "beverly road 2 train",
+                  "beverly road 2 and 5 trains",
+                  "beverly road IRT"
+                ]
+              }
+            },
+            {
+              "id": "637",
+              "name": {
+                "value": "bleecker street"
+              }
+            },
+            {
+              "id": "232",
+              "name": {
+                "value": "borough hall 7th avenue line",
+                "synonyms": [
+                  "borough hall 3 train",
+                  "borough hall 2 train",
+                  "borough hall 2 and 3 trains"
+                ]
+              }
+            },
+            {
+              "id": "423",
+              "name": {
+                "value": "borough hall lexington avenue line",
+                "synonyms": [
+                  "borough hall 5 train",
+                  "borough hall 4 train",
+                  "borough hall 4 and 5 trains",
+                  "borough hall eastern parkway line"
+                ]
+              }
+            },
+            {
+              "id": "S04",
+              "name": {
+                "value": "botanic garden"
+              }
+            },
+            {
+              "id": "M19",
+              "name": {
+                "value": "bowery"
+              }
+            },
+            {
+              "id": "420",
+              "name": {
+                "value": "bowling green"
+              }
+            },
+            {
+              "id": "F05",
+              "name": {
+                "value": "briarwood van wyck boulevard",
+                "synonyms": [
+                  "briarwood"
+                ]
+              }
+            },
+            {
+              "id": "D40",
+              "name": {
+                "value": "brighton beach"
+              }
+            },
+            {
+              "id": "H04",
+              "name": {
+                "value": "broad channel"
+              }
+            },
+            {
+              "id": "M23",
+              "name": {
+                "value": "broad street"
+              }
+            },
+            {
+              "id": "R05",
+              "name": {
+                "value": "broadway 31st street",
+                "synonyms": [
+                  "broadway BMT",
+                  "broadway astoria line",
+                  "broadway W train",
+                  "broadway N train",
+                  "broadway N and W trains",
+                  "broadway astoria",
+                  "broadway queens"
+                ]
+              }
+            },
+            {
+              "id": "L22",
+              "name": {
+                "value": "broadway junction canarsie line",
+                "synonyms": [
+                  "broadway junction L train"
+                ]
+              }
+            },
+            {
+              "id": "A51",
+              "name": {
+                "value": "broadway junction fulton street line",
+                "synonyms": [
+                  "broadway junction IND",
+                  "broadway junction C train",
+                  "broadway junction A train",
+                  "broadway junction A and C trains",
+                  "broadway east new york"
+                ]
+              }
+            },
+            {
+              "id": "J27",
+              "name": {
+                "value": "broadway junction jamaica line",
+                "synonyms": [
+                  "broadway junction Z train",
+                  "broadway junction J train",
+                  "broadway junction J and Z trains",
+                  "broadway junction eastern parkway"
+                ]
+              }
+            },
+            {
+              "id": "D21",
+              "name": {
+                "value": "broadway lafayette street"
+              }
+            },
+            {
+              "id": "G30",
+              "name": {
+                "value": "broadway union avenue",
+                "synonyms": [
+                  "broadway williamsburg",
+                  "broadway IND",
+                  "broadway crosstown line",
+                  "broadway G train",
+                  "broadway brooklyn"
+                ]
+              }
+            },
+            {
+              "id": "212",
+              "name": {
+                "value": "bronx park east"
+              }
+            },
+            {
+              "id": "618",
+              "name": {
+                "value": "brook avenue"
+              }
+            },
+            {
+              "id": "640",
+              "name": {
+                "value": "brooklyn bridge city hall"
+              }
+            },
+            {
+              "id": "602",
+              "name": {
+                "value": "buhre avenue"
+              }
+            },
+            {
+              "id": "209",
+              "name": {
+                "value": "burke avenue"
+              }
+            },
+            {
+              "id": "409",
+              "name": {
+                "value": "burnside avenue"
+              }
+            },
+            {
+              "id": "L21",
+              "name": {
+                "value": "bushwick avenue aberdeen street"
+              }
+            },
+            {
+              "id": "A34",
+              "name": {
+                "value": "canal street 6th avenue",
+                "synonyms": [
+                  "canal street E train",
+                  "canal street C train",
+                  "canal street A train",
+                  "canal street A C and E trains",
+                  "canal street 8th avenue line",
+                  "canal and 6th"
+                ]
+              }
+            },
+            {
+              "id": "Q01",
+              "name": {
+                "value": "canal street broadway lower level ",
+                "synonyms": [
+                  "canal street Q train",
+                  "canal street N train",
+                  "canal street N and Q trains",
+                  "canal street via bridge",
+                  "canal street bridge line",
+                  "canal street manhattan bridge"
+                ]
+              }
+            },
+            {
+              "id": "R23",
+              "name": {
+                "value": "canal street broadway upper level ",
+                "synonyms": [
+                  "canal street W train",
+                  "canal street R train",
+                  "canal street R and W trains",
+                  "canal street motague street tunnel",
+                  "canal street via tunnel",
+                  "canal street lower manhattan",
+                  "canal street main line"
+                ]
+              }
+            },
+            {
+              "id": "M20",
+              "name": {
+                "value": "canal street centre street",
+                "synonyms": [
+                  "canal and centre",
+                  "canal street jamaica line",
+                  "canal street nassau street line",
+                  "canal street Z train",
+                  "canal street J train",
+                  "canal street J and Z trains"
+                ]
+              }
+            },
+            {
+              "id": "639",
+              "name": {
+                "value": "canal street lafayette street",
+                "synonyms": [
+                  "canal street 6 train",
+                  "canal street lex line",
+                  "canal street lexington avenue line",
+                  "canal and lafayette"
+                ]
+              }
+            },
+            {
+              "id": "135",
+              "name": {
+                "value": "canal street varick street",
+                "synonyms": [
+                  "canal street 1 train",
+                  "canal street broadway 7th avenue line",
+                  "canal street 7th avenue line",
+                  "canal and varick"
+                ]
+              }
+            },
+            {
+              "id": "L29",
+              "name": {
+                "value": "canarsie rockaway parkway",
+                "synonyms": [
+                  "rockaway parkway",
+                  "canarsie"
+                ]
+              }
+            },
+            {
+              "id": "F21",
+              "name": {
+                "value": "carroll street"
+              }
+            },
+            {
+              "id": "607",
+              "name": {
+                "value": "castle hill avenue"
+              }
+            },
+            {
+              "id": "118",
+              "name": {
+                "value": "cathedral parkway 110th street broadway",
+                "synonyms": [
+                  "cathedral parkway 110th street 1 train",
+                  "110th street 1 train",
+                  "cathedral parkway 1 train",
+                  "cathedral parkway and broadway",
+                  "110th street and broadway"
+                ]
+              }
+            },
+            {
+              "id": "A17",
+              "name": {
+                "value": "cathedral parkway 110th street frederick douglass boulevard",
+                "synonyms": [
+                  "cathedral parkway 110th street C train",
+                  "cathedral parkway 110th street B train",
+                  "cathedral parkway 110th street B and C trains",
+                  "110th street B and C trains",
+                  "cathedral parkway B and C trains",
+                  "cathedral parkway and frederick douglass",
+                  "110th street and frederick douglass"
+                ]
+              }
+            },
+            {
+              "id": "M10",
+              "name": {
+                "value": "central avenue"
+              }
+            },
+            {
+              "id": "227",
+              "name": {
+                "value": "central park north 110th street",
+                "synonyms": [
+                  "110th and malcolm x",
+                  "110th and lenox",
+                  "110th street 2 and 3 trains"
+                ]
+              }
+            },
+            {
+              "id": "M21",
+              "name": {
+                "value": "chambers street centre street",
+                "synonyms": [
+                  "chambers street BMT",
+                  "chambers and centre",
+                  "chambers street Z train",
+                  "chambers street J train",
+                  "chambers street J and Z trains",
+                  "chambers street jamaica line",
+                  "chambers street nassau street line"
+                ]
+              }
+            },
+            {
+              "id": "A36",
+              "name": {
+                "value": "chambers street church street",
+                "synonyms": [
+                  "chambers street C train",
+                  "chambers street A train",
+                  "chambers street A and C trains",
+                  "chambers street IND",
+                  "chambers street 8th avenue line",
+                  "chambers and church"
+                ]
+              }
+            },
+            {
+              "id": "137",
+              "name": {
+                "value": "chambers street west broadway",
+                "synonyms": [
+                  "chambers street 3 train",
+                  "chambers street 2 train",
+                  "chambers street 1 train",
+                  "chambers street 1 2 and 3 trains",
+                  "chambers street IRT",
+                  "chambers street 7th avenue line",
+                  "chambers street broadway 7th avenue line",
+                  "chambers and west broadway"
+                ]
+              }
+            },
+            {
+              "id": "J28",
+              "name": {
+                "value": "chauncey street"
+              }
+            },
+            {
+              "id": "133",
+              "name": {
+                "value": "christopher street sheridan square"
+              }
+            },
+            {
+              "id": "D28",
+              "name": {
+                "value": "church avenue east 18th street",
+                "synonyms": [
+                  "church avenue Q train",
+                  "church avenue brighton line"
+                ]
+              }
+            },
+            {
+              "id": "F27",
+              "name": {
+                "value": "church avenue mcdonald avenue",
+                "synonyms": [
+                  "church avenue G train",
+                  "church avenue F train",
+                  "church avenue F and G trains",
+                  "church avenue culver line"
+                ]
+              }
+            },
+            {
+              "id": "244",
+              "name": {
+                "value": "church avenue nostrand avenue",
+                "synonyms": [
+                  "church avenue nordstrom avenue",
+                  "church avenue 5 train",
+                  "church avenue 2 train",
+                  "church avenue 2 and 5 trains"
+                ]
+              }
+            },
+            {
+              "id": "R24",
+              "name": {
+                "value": "city hall"
+              }
+            },
+            {
+              "id": "231",
+              "name": {
+                "value": "clark street"
+              }
+            },
+            {
+              "id": "G34",
+              "name": {
+                "value": "classon avenue"
+              }
+            },
+            {
+              "id": "J22",
+              "name": {
+                "value": "cleveland street"
+              }
+            },
+            {
+              "id": "S28",
+              "name": {
+                "value": "clifton"
+              }
+            },
+            {
+              "id": "A44",
+              "name": {
+                "value": "clinton washington avenues fulton street",
+                "synonyms": [
+                  "clinton washington avenues A train",
+                  "clinton washington avenues C train"
+                ]
+              }
+            },
+            {
+              "id": "G35",
+              "name": {
+                "value": "clinton washington avenues lafayette avenue",
+                "synonyms": [
+                  "clinton washington avenues crosstown line",
+                  "clinton washington avenues G train"
+                ]
+              }
+            },
+            {
+              "id": "D43",
+              "name": {
+                "value": "coney island stillwell avenue"
+              }
+            },
+            {
+              "id": "D30",
+              "name": {
+                "value": "cortelyou road"
+              }
+            },
+            {
+              "id": "R25",
+              "name": {
+                "value": "cortlandt street"
+              }
+            },
+            {
+              "id": "F09",
+              "name": {
+                "value": "court square 23rd street",
+                "synonyms": [
+                  "court square M train",
+                  "court square E train",
+                  "court square E and M trains",
+                  "court square queens boulevard line"
+                ]
+              }
+            },
+            {
+              "id": "G22",
+              "name": {
+                "value": "court square crosstown line",
+                "synonyms": [
+                  "court square G train"
+                ]
+              }
+            },
+            {
+              "id": "719",
+              "name": {
+                "value": "court square flushing line",
+                "synonyms": [
+                  "court square 7 train"
+                ]
+              }
+            },
+            {
+              "id": "R28",
+              "name": {
+                "value": "court street"
+              }
+            },
+            {
+              "id": "J20",
+              "name": {
+                "value": "crescent street"
+              }
+            },
+            {
+              "id": "250",
+              "name": {
+                "value": "crown heights utica avenue"
+              }
+            },
+            {
+              "id": "617",
+              "name": {
+                "value": "cypress avenue"
+              }
+            },
+            {
+              "id": "J19",
+              "name": {
+                "value": "cypress hills"
+              }
+            },
+            {
+              "id": "R30",
+              "name": {
+                "value": "dekalb avenue flatbush avenue extension",
+                "synonyms": [
+                  "dekalb and flatbush",
+                  "dekalb avenue N train",
+                  "dekalb avenue D train",
+                  "dekalb avenue R train",
+                  "dekalb avenue Q train",
+                  "dekalb avenue B train",
+                  "dekalb avenue B Q and R trains",
+                  "dekalb avenue 4th avenue and brighton lines",
+                  "dekalb avenue 4th avenue line",
+                  "dekalb avenue brighton line"
+                ]
+              }
+            },
+            {
+              "id": "L16",
+              "name": {
+                "value": "dekalb avenue wyckoff avenue",
+                "synonyms": [
+                  "dekalb and wyckoff",
+                  "dekalb avenue canarsie line",
+                  "dekalb avenue L train"
+                ]
+              }
+            },
+            {
+              "id": "F15",
+              "name": {
+                "value": "delancey street"
+              }
+            },
+            {
+              "id": "F29",
+              "name": {
+                "value": "ditmas avenue"
+              }
+            },
+            {
+              "id": "S25",
+              "name": {
+                "value": "dongan hills"
+              }
+            },
+            {
+              "id": "109",
+              "name": {
+                "value": "dyckman street nagle avenue",
+                "synonyms": [
+                  "dikeman street nagle avenue",
+                  "dyckman street broadway 7th avenue line",
+                  "dyckman street IRT",
+                  "dyckman street 1 train"
+                ]
+              }
+            },
+            {
+              "id": "A03",
+              "name": {
+                "value": "dyckman street broadway",
+                "synonyms": [
+                  "dikeman street broadway",
+                  "dyckman 200th streets",
+                  "dyckman street 200th street",
+                  "dyckman street A train",
+                  "dyckman street IND",
+                  "dyckman street 8th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "L28",
+              "name": {
+                "value": "east 105th street"
+              }
+            },
+            {
+              "id": "616",
+              "name": {
+                "value": "east 143rd street saint mary\u0027s street"
+              }
+            },
+            {
+              "id": "615",
+              "name": {
+                "value": "east 149th street"
+              }
+            },
+            {
+              "id": "213",
+              "name": {
+                "value": "east 180th street"
+              }
+            },
+            {
+              "id": "F16",
+              "name": {
+                "value": "east broadway"
+              }
+            },
+            {
+              "id": "501",
+              "name": {
+                "value": "eastchester dyre avenue",
+                "synonyms": [
+                  "eastchester",
+                  "dyre avenue"
+                ]
+              }
+            },
+            {
+              "id": "238",
+              "name": {
+                "value": "eastern parkway brooklyn museum"
+              }
+            },
+            {
+              "id": "611",
+              "name": {
+                "value": "elder avenue"
+              }
+            },
+            {
+              "id": "G13",
+              "name": {
+                "value": "elmhurst avenue"
+              }
+            },
+            {
+              "id": "S18",
+              "name": {
+                "value": "eltingville"
+              }
+            },
+            {
+              "id": "M18",
+              "name": {
+                "value": "essex street"
+              }
+            },
+            {
+              "id": "A55",
+              "name": {
+                "value": "euclid avenue"
+              }
+            },
+            {
+              "id": "H11",
+              "name": {
+                "value": "far rockaway mott avenue",
+                "synonyms": [
+                  "mott avenue",
+                  "far rockaway"
+                ]
+              }
+            },
+            {
+              "id": "247",
+              "name": {
+                "value": "flatbush avenue brooklyn college",
+                "synonyms": [
+                  "brooklyn college",
+                  "flatbush avenue"
+                ]
+              }
+            },
+            {
+              "id": "M12",
+              "name": {
+                "value": "flushing avenue broadway",
+                "synonyms": [
+                  "flushing avenue jamaica line",
+                  "flushing avenue M trains",
+                  "flushing avenue J train",
+                  "flushing avenue J and M trains",
+                  "flushing avenue BMT",
+                  "flushing and broadway"
+                ]
+              }
+            },
+            {
+              "id": "G31",
+              "name": {
+                "value": "flushing avenue union avenue",
+                "synonyms": [
+                  "flushing avenue crosstown line",
+                  "flushing avenue G train",
+                  "flushing avenue IND",
+                  "flushing and union"
+                ]
+              }
+            },
+            {
+              "id": "701",
+              "name": {
+                "value": "flushing main street",
+                "synonyms": [
+                  "main street",
+                  "flushing"
+                ]
+              }
+            },
+            {
+              "id": "D05",
+              "name": {
+                "value": "fordham road grand concourse",
+                "synonyms": [
+                  "fordham road D train",
+                  "fordham road B train",
+                  "fordham road B and D trains",
+                  "fordham and concourse"
+                ]
+              }
+            },
+            {
+              "id": "407",
+              "name": {
+                "value": "fordham road jerome avenue",
+                "synonyms": [
+                  "fordham road 4 train",
+                  "fordham and jerome"
+                ]
+              }
+            },
+            {
+              "id": "M05",
+              "name": {
+                "value": "forest avenue"
+              }
+            },
+            {
+              "id": "G08",
+              "name": {
+                "value": "forest hills 71st avenue",
+                "synonyms": [
+                  "forest hills continental",
+                  "71st continental avenues",
+                  "continental avenue",
+                  "forest hills",
+                  "71st avenue"
+                ]
+              }
+            },
+            {
+              "id": "N03",
+              "name": {
+                "value": "fort hamilton parkway 62nd street",
+                "synonyms": [
+                  "fort hamilton parkway N train",
+                  "fort hamilton parkway sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "B13",
+              "name": {
+                "value": "fort hamilton parkway new utrecht avenue",
+                "synonyms": [
+                  "fort hamilton parkway D train",
+                  "fort hamilton parkway west end line"
+                ]
+              }
+            },
+            {
+              "id": "F26",
+              "name": {
+                "value": "fort hamilton parkway prospect avenue",
+                "synonyms": [
+                  "fort hamilton parkway G train",
+                  "fort hamilton parkway F train",
+                  "fort hamilton parkway F and G trains",
+                  "fort hamilton parkway culver line"
+                ]
+              }
+            },
+            {
+              "id": "A45",
+              "name": {
+                "value": "franklin avenue fulton street",
+                "synonyms": [
+                  "franklin avenue fulton street line",
+                  "franklin avenue C train"
+                ]
+              }
+            },
+            {
+              "id": "239",
+              "name": {
+                "value": "franklin avenue medgar evers college",
+                "synonyms": [
+                  "franklin avenue 5 train",
+                  "franklin avenue 4 train",
+                  "franklin avenue 3 train",
+                  "franklin avenue 2 train",
+                  "franklin avenue 2 3 4 and 5 trains",
+                  "franklin avenue IRT",
+                  "franklin avenue eastern parkway"
+                ]
+              }
+            },
+            {
+              "id": "S01",
+              "name": {
+                "value": "franklin avenue shuttle",
+                "synonyms": [
+                  "franklin avenue S train",
+                  "franklin avenue shuttle platform"
+                ]
+              }
+            },
+            {
+              "id": "136",
+              "name": {
+                "value": "franklin street"
+              }
+            },
+            {
+              "id": "216",
+              "name": {
+                "value": "freeman street"
+              }
+            },
+            {
+              "id": "M04",
+              "name": {
+                "value": "fresh pond road"
+              }
+            },
+            {
+              "id": "229",
+              "name": {
+                "value": "fulton street broadway nassau street 7th avenue line",
+                "synonyms": [
+                  "fulton street 3 train",
+                  "fulton street 2 train",
+                  "fulton street 2 and 3 trains",
+                  "fulton street 7th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "A38",
+              "name": {
+                "value": "fulton street broadway nassau street 8th avenue line",
+                "synonyms": [
+                  "fulton street C train",
+                  "fulton street A train",
+                  "fulton street A and C trains",
+                  "fulton street 8th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "418",
+              "name": {
+                "value": "fulton street broadway nassau street lexington avenue  line",
+                "synonyms": [
+                  "fulton street 4 and 5 trains",
+                  "fulton street 5 train",
+                  "fulton street 4 train",
+                  "fulton street lexington avenue line"
+                ]
+              }
+            },
+            {
+              "id": "M22",
+              "name": {
+                "value": "fulton street broadway nassau street nassau street line",
+                "synonyms": [
+                  "fulton street Z train",
+                  "fulton street J train",
+                  "fulton street J and Z trains",
+                  "fulton street jamaica line",
+                  "fulton street nassau street line"
+                ]
+              }
+            },
+            {
+              "id": "G36",
+              "name": {
+                "value": "fulton street lafayette avenue",
+                "synonyms": [
+                  "fulton street G train",
+                  "fulton street brooklyn",
+                  "fulton street crosstown line"
+                ]
+              }
+            },
+            {
+              "id": "J30",
+              "name": {
+                "value": "gates avenue"
+              }
+            },
+            {
+              "id": "L11",
+              "name": {
+                "value": "graham avenue"
+              }
+            },
+            {
+              "id": "237",
+              "name": {
+                "value": "grand army plaza"
+              }
+            },
+            {
+              "id": "G12",
+              "name": {
+                "value": "grand avenue newtown",
+                "synonyms": [
+                  "grand avenue"
+                ]
+              }
+            },
+            {
+              "id": "901",
+              "name": {
+                "value": "grand central 42nd street 42nd street shuttle",
+                "synonyms": [
+                  "grand central 42nd street S train",
+                  "grand central shuttle",
+                  "grand central 42nd street shuffle platform"
+                ]
+              }
+            },
+            {
+              "id": "723",
+              "name": {
+                "value": "grand central 42nd street flushing line",
+                "synonyms": [
+                  "grand central flushing line",
+                  "grand central 7 train",
+                  "grand central 42nd street 7 train"
+                ]
+              }
+            },
+            {
+              "id": "631",
+              "name": {
+                "value": "grand central 42nd street lexington avenue line",
+                "synonyms": [
+                  "grand central lexington avenue line",
+                  "grand central 42nd street lex line",
+                  "42nd street 4 5 and 6 trains",
+                  "grand central 4 5 and 6 trains",
+                  "grand central 42nd street 4 5 and 6 trains"
+                ]
+              }
+            },
+            {
+              "id": "L12",
+              "name": {
+                "value": "grand street bushwick avenue",
+                "synonyms": [
+                  "grand and bushwick",
+                  "grand street canarsie line",
+                  "grand street L train",
+                  "grand street brooklyn"
+                ]
+              }
+            },
+            {
+              "id": "D22",
+              "name": {
+                "value": "grand street chrystie street",
+                "synonyms": [
+                  "grand street manhattan bridge",
+                  "grand street sixth avenue line",
+                  "grand and chrystie",
+                  "grand street D train",
+                  "grand street B train",
+                  "grand street B and D trains"
+                ]
+              }
+            },
+            {
+              "id": "A57",
+              "name": {
+                "value": "grant avenue"
+              }
+            },
+            {
+              "id": "S23",
+              "name": {
+                "value": "grant city"
+              }
+            },
+            {
+              "id": "S27",
+              "name": {
+                "value": "grasmere"
+              }
+            },
+            {
+              "id": "S19",
+              "name": {
+                "value": "great kills"
+              }
+            },
+            {
+              "id": "G26",
+              "name": {
+                "value": "greenpoint avenue"
+              }
+            },
+            {
+              "id": "503",
+              "name": {
+                "value": "gun hill road seymour avenue",
+                "synonyms": [
+                  "gun hill road 5 train",
+                  "gun hill road dyre avenue line"
+                ]
+              }
+            },
+            {
+              "id": "208",
+              "name": {
+                "value": "gun hill road white plains road",
+                "synonyms": [
+                  "gun hill road 2 train",
+                  "gun hill road 2 and 5 trains"
+                ]
+              }
+            },
+            {
+              "id": "J29",
+              "name": {
+                "value": "halsey street broadway",
+                "synonyms": [
+                  "halsey and broadway",
+                  "halsey street J train",
+                  "halsey street jamaica line"
+                ]
+              }
+            },
+            {
+              "id": "L19",
+              "name": {
+                "value": "halsey street wyckoff avenue",
+                "synonyms": [
+                  "halsey and wyckoff",
+                  "halsey street L train",
+                  "halsey street canarsie line"
+                ]
+              }
+            },
+            {
+              "id": "301",
+              "name": {
+                "value": "harlem 148th street",
+                "synonyms": [
+                  "lenox terminal",
+                  "148th street"
+                ]
+              }
+            },
+            {
+              "id": "M14",
+              "name": {
+                "value": "hewes street"
+              }
+            },
+            {
+              "id": "A40",
+              "name": {
+                "value": "high street"
+              }
+            },
+            {
+              "id": "134",
+              "name": {
+                "value": "houston street",
+                "synonyms": [
+                  "squarespace"
+                ]
+              }
+            },
+            {
+              "id": "H03",
+              "name": {
+                "value": "howard beach JFK airport",
+                "synonyms": [
+                  "howard beach"
+                ]
+              }
+            },
+            {
+              "id": "A42",
+              "name": {
+                "value": "hoyt schermerhorn streets",
+                "synonyms": [
+                  "hoyt skimmerhorn streets",
+                  "hoyt skimmerhorn",
+                  "hoyt sermerhorn streets",
+                  "hoyt sermerhorn",
+                  "hoyt skimerhorn",
+                  "hoyt skimerhorn streets",
+                  "hoyt schermerhorn"
+                ]
+              }
+            },
+            {
+              "id": "233",
+              "name": {
+                "value": "hoyt street"
+              }
+            },
+            {
+              "id": "S16",
+              "name": {
+                "value": "huguenot"
+              }
+            },
+            {
+              "id": "720",
+              "name": {
+                "value": "hunters point avenue"
+              }
+            },
+            {
+              "id": "613",
+              "name": {
+                "value": "hunts point avenue"
+              }
+            },
+            {
+              "id": "218",
+              "name": {
+                "value": "intervale avenue"
+              }
+            },
+            {
+              "id": "A02",
+              "name": {
+                "value": "inwood 207th street",
+                "synonyms": [
+                  "inwood"
+                ]
+              }
+            },
+            {
+              "id": "220",
+              "name": {
+                "value": "jackson avenue"
+              }
+            },
+            {
+              "id": "G14",
+              "name": {
+                "value": "jackson heights roosevelt avenue"
+              }
+            },
+            {
+              "id": "F01",
+              "name": {
+                "value": "jamaica 179th street",
+                "synonyms": [
+                  "179th street"
+                ]
+              }
+            },
+            {
+              "id": "G05",
+              "name": {
+                "value": "jamaica center parsons archer",
+                "synonyms": [
+                  "jamaica center"
+                ]
+              }
+            },
+            {
+              "id": "G07",
+              "name": {
+                "value": "jamaica van wyck"
+              }
+            },
+            {
+              "id": "R29",
+              "name": {
+                "value": "jay street metrotech 4th avenue line",
+                "synonyms": [
+                  "lawrence street metrotech",
+                  "jay street metrotech R train"
+                ]
+              }
+            },
+            {
+              "id": "A41",
+              "name": {
+                "value": "jay street metrotech fulton street and culver lines",
+                "synonyms": [
+                  "jay street metrotech F train",
+                  "jay street metrotech C train",
+                  "jay street metrotech A train",
+                  "jay street metrotech A C and F trains",
+                  "jay street metrotech culver line",
+                  "jay street metrotech fulton street line",
+                  "jay street borough hall"
+                ]
+              }
+            },
+            {
+              "id": "S24",
+              "name": {
+                "value": "jefferson avenue"
+              }
+            },
+            {
+              "id": "L15",
+              "name": {
+                "value": "jefferson street"
+              }
+            },
+            {
+              "id": "707",
+              "name": {
+                "value": "junction boulevard"
+              }
+            },
+            {
+              "id": "254",
+              "name": {
+                "value": "junius street"
+              }
+            },
+            {
+              "id": "F06",
+              "name": {
+                "value": "kew gardens union turnpike"
+              }
+            },
+            {
+              "id": "D35",
+              "name": {
+                "value": "kings highway east 16th street",
+                "synonyms": [
+                  "kings highway Q train",
+                  "kings highway brighton line"
+                ]
+              }
+            },
+            {
+              "id": "F35",
+              "name": {
+                "value": "kings highway mcdonald avenue",
+                "synonyms": [
+                  "kings highway F train",
+                  "kings highway culver line"
+                ]
+              }
+            },
+            {
+              "id": "N08",
+              "name": {
+                "value": "kings highway west 7th street",
+                "synonyms": [
+                  "kings highway N train",
+                  "kings highway sea beach line"
+                ]
+              }
+            },
+            {
+              "id": "D04",
+              "name": {
+                "value": "kingsbridge road grand concourse",
+                "synonyms": [
+                  "kingsbridge road D train",
+                  "kingsbridge road B train",
+                  "kingsbridge road B and D trains",
+                  "kingsbridge and concourse"
+                ]
+              }
+            },
+            {
+              "id": "406",
+              "name": {
+                "value": "kingsbridge road jerome avenue",
+                "synonyms": [
+                  "kingsbridge road 4 train",
+                  "kingsbridge and jerome"
+                ]
+              }
+            },
+            {
+              "id": "249",
+              "name": {
+                "value": "kingston avenue"
+              }
+            },
+            {
+              "id": "A47",
+              "name": {
+                "value": "kingston throop avenues"
+              }
+            },
+            {
+              "id": "M09",
+              "name": {
+                "value": "knickerbocker avenue"
+              }
+            },
+            {
+              "id": "J31",
+              "name": {
+                "value": "kosciuszko street"
+              }
+            },
+            {
+              "id": "A43",
+              "name": {
+                "value": "lafayette avenue"
+              }
+            },
+            {
+              "id": "F11",
+              "name": {
+                "value": "lexington avenue 53rd street"
+              }
+            },
+            {
+              "id": "R11",
+              "name": {
+                "value": "lexington avenue 59th street"
+              }
+            },
+            {
+              "id": "B08",
+              "name": {
+                "value": "lexington avenue 63rd street"
+              }
+            },
+            {
+              "id": "A52",
+              "name": {
+                "value": "liberty avenue"
+              }
+            },
+            {
+              "id": "L26",
+              "name": {
+                "value": "livonia avenue"
+              }
+            },
+            {
+              "id": "614",
+              "name": {
+                "value": "longwood avenue"
+              }
+            },
+            {
+              "id": "M13",
+              "name": {
+                "value": "lorimer street broadway",
+                "synonyms": [
+                  "lorimer street M train",
+                  "lorimer street J train",
+                  "lorimer street J and M trains",
+                  "lorimer and broadway",
+                  "lorimer street jamaica line"
+                ]
+              }
+            },
+            {
+              "id": "L10",
+              "name": {
+                "value": "lorimer street metropolitan avenue",
+                "synonyms": [
+                  "lorimer street L train",
+                  "lorimer street canarsie line",
+                  "lorimer and metropolitan",
+                  "lorimer and metro",
+                  "lorimer and met"
+                ]
+              }
+            },
+            {
+              "id": "106",
+              "name": {
+                "value": "marble hill 225th street",
+                "synonyms": [
+                  "marble hill"
+                ]
+              }
+            },
+            {
+              "id": "M16",
+              "name": {
+                "value": "marcy avenue"
+              }
+            },
+            {
+              "id": "G29",
+              "name": {
+                "value": "metropolitan avenue",
+                "synonyms": [
+                  "metropolitan avenue union avenue"
+                ]
+              }
+            },
+            {
+              "id": "702",
+              "name": {
+                "value": "mets willets point",
+                "synonyms": [
+                  "willets point boulevard",
+                  "shea stadium"
+                ]
+              }
+            },
+            {
+              "id": "M01",
+              "name": {
+                "value": "middle village metropolitan avenue",
+                "synonyms": [
+                  "middle village"
+                ]
+              }
+            },
+            {
+              "id": "603",
+              "name": {
+                "value": "middletown road"
+              }
+            },
+            {
+              "id": "L13",
+              "name": {
+                "value": "montrose avenue"
+              }
+            },
+            {
+              "id": "L14",
+              "name": {
+                "value": "morgan avenue"
+              }
+            },
+            {
+              "id": "505",
+              "name": {
+                "value": "morris park"
+              }
+            },
+            {
+              "id": "610",
+              "name": {
+                "value": "morrison avenue sound view"
+              }
+            },
+            {
+              "id": "402",
+              "name": {
+                "value": "mosholu parkway"
+              }
+            },
+            {
+              "id": "411",
+              "name": {
+                "value": "mount eden avenue"
+              }
+            },
+            {
+              "id": "M11",
+              "name": {
+                "value": "myrtle avenue",
+                "synonyms": [
+                  "myrtle and broadway",
+                  "myrtle avenue broadway"
+                ]
+              }
+            },
+            {
+              "id": "G32",
+              "name": {
+                "value": "myrtle willoughby avenues"
+              }
+            },
+            {
+              "id": "L17",
+              "name": {
+                "value": "myrtle wyckoff avenues canarsie line",
+                "synonyms": [
+                  "myrtle wyckoff avenues L train"
+                ]
+              }
+            },
+            {
+              "id": "M08",
+              "name": {
+                "value": "myrtle wyckoff avenues myrtle avenue line",
+                "synonyms": [
+                  "myrtle wyckoff avenues M train"
+                ]
+              }
+            },
+            {
+              "id": "S12",
+              "name": {
+                "value": "nassau"
+              }
+            },
+            {
+              "id": "G28",
+              "name": {
+                "value": "nassau avenue"
+              }
+            },
+            {
+              "id": "D38",
+              "name": {
+                "value": "neck road"
+              }
+            },
+            {
+              "id": "F39",
+              "name": {
+                "value": "neptune avenue"
+              }
+            },
+            {
+              "id": "204",
+              "name": {
+                "value": "nereid avenue"
+              }
+            },
+            {
+              "id": "234",
+              "name": {
+                "value": "nevins street"
+              }
+            },
+            {
+              "id": "S22",
+              "name": {
+                "value": "new dorp"
+              }
+            },
+            {
+              "id": "257",
+              "name": {
+                "value": "new lots avenue livonia avenue",
+                "synonyms": [
+                  "new lots avenue 3 train",
+                  "new lots avenue new lots line"
+                ]
+              }
+            },
+            {
+              "id": "L27",
+              "name": {
+                "value": "new lots avenue van sinderen avenue",
+                "synonyms": [
+                  "new lots avenue L train",
+                  "new lots avenue canarsie line"
+                ]
+              }
+            },
+            {
+              "id": "N04",
+              "name": {
+                "value": "new utrecht avenue"
+              }
+            },
+            {
+              "id": "246",
+              "name": {
+                "value": "newkirk avenue"
+              }
+            },
+            {
+              "id": "D31",
+              "name": {
+                "value": "newkirk plaza"
+              }
+            },
+            {
+              "id": "G16",
+              "name": {
+                "value": "northern boulevard"
+              }
+            },
+            {
+              "id": "D01",
+              "name": {
+                "value": "norwood 205th street",
+                "synonyms": [
+                  "205th street",
+                  "norwood"
+                ]
+              }
+            },
+            {
+              "id": "J21",
+              "name": {
+                "value": "norwood avenue"
+              }
+            },
+            {
+              "id": "248",
+              "name": {
+                "value": "nostrand avenue eastern parkway",
+                "synonyms": [
+                  "nordstrom avenue eastern parkway",
+                  "nostrand and eastern",
+                  "nostrand avenue 3 train"
+                ]
+              }
+            },
+            {
+              "id": "A46",
+              "name": {
+                "value": "nostrand avenue fulton street",
+                "synonyms": [
+                  "nordstrom avenue fulton street",
+                  "nostrand avenue C train",
+                  "nostrand avenue A train",
+                  "nostrand avenue A and C trains",
+                  "nostrand and fulton"
+                ]
+              }
+            },
+            {
+              "id": "S21",
+              "name": {
+                "value": "oakwood heights"
+              }
+            },
+            {
+              "id": "D41",
+              "name": {
+                "value": "ocean parkway"
+              }
+            },
+            {
+              "id": "S26",
+              "name": {
+                "value": "old town"
+              }
+            },
+            {
+              "id": "A65",
+              "name": {
+                "value": "ozone park lefferts boulevard",
+                "synonyms": [
+                  "lefferts boulevard",
+                  "ozone park"
+                ]
+              }
+            },
+            {
+              "id": "228",
+              "name": {
+                "value": "park place broadway",
+                "synonyms": [
+                  "park place 3 train",
+                  "park place 2 train",
+                  "park place 2 and 3 trains",
+                  "park place broadway 7th avenue line",
+                  "park place 7th avenue line",
+                  "park place manhattan"
+                ]
+              }
+            },
+            {
+              "id": "S03",
+              "name": {
+                "value": "park place franklin avenue",
+                "synonyms": [
+                  "park place franklin avenue line",
+                  "park place S train",
+                  "park place franklin avenue shuttle",
+                  "park place brooklyn",
+                  "park place shuttle"
+                ]
+              }
+            },
+            {
+              "id": "608",
+              "name": {
+                "value": "parkchester"
+              }
+            },
+            {
+              "id": "D27",
+              "name": {
+                "value": "parkside avenue"
+              }
+            },
+            {
+              "id": "F03",
+              "name": {
+                "value": "parsons boulevard"
+              }
+            },
+            {
+              "id": "601",
+              "name": {
+                "value": "pelham bay park"
+              }
+            },
+            {
+              "id": "504",
+              "name": {
+                "value": "pelham parkway esplanade",
+                "synonyms": [
+                  "pelham parkway 5 train",
+                  "pelham parkway dyre avenue line"
+                ]
+              }
+            },
+            {
+              "id": "211",
+              "name": {
+                "value": "pelham parkway white plains road",
+                "synonyms": [
+                  "pelham parkway 2 and 5 trains",
+                  "pelham parkway 2 train"
+                ]
+              }
+            },
+            {
+              "id": "255",
+              "name": {
+                "value": "pennsylvania avenue"
+              }
+            },
+            {
+              "id": "S14",
+              "name": {
+                "value": "pleasant plains"
+              }
+            },
+            {
+              "id": "241",
+              "name": {
+                "value": "president street medgar evers college"
+              }
+            },
+            {
+              "id": "S15",
+              "name": {
+                "value": "prince south bay"
+              }
+            },
+            {
+              "id": "R22",
+              "name": {
+                "value": "prince street"
+              }
+            },
+            {
+              "id": "R34",
+              "name": {
+                "value": "prospect avenue 4th avenue",
+                "synonyms": [
+                  "prospect avenue R train",
+                  "prospect avenue brooklyn",
+                  "prospect and 4th"
+                ]
+              }
+            },
+            {
+              "id": "219",
+              "name": {
+                "value": "prospect avenue westchester avenue",
+                "synonyms": [
+                  "prospect avenue 5 train",
+                  "prospect avenue 2 train",
+                  "prospect avenue 2 and 5 trains",
+                  "prospect avenue bronx",
+                  "prospect avenue white plains road line",
+                  "prospect and westchester"
+                ]
+              }
+            },
+            {
+              "id": "D26",
+              "name": {
+                "value": "prospect park"
+              }
+            },
+            {
+              "id": "G21",
+              "name": {
+                "value": "queens plaza"
+              }
+            },
+            {
+              "id": "R09",
+              "name": {
+                "value": "queensboro plaza astoria line",
+                "synonyms": [
+                  "queensboro plaza W train",
+                  "queensboro plaza N train",
+                  "queensboro plaza N and W trains",
+                  "queensboro plaza BMT"
+                ]
+              }
+            },
+            {
+              "id": "718",
+              "name": {
+                "value": "queensboro plaza flushing line",
+                "synonyms": [
+                  "queensboro plaza 7 train",
+                  "queensboro plaza IRT"
+                ]
+              }
+            },
+            {
+              "id": "A49",
+              "name": {
+                "value": "ralph avenue"
+              }
+            },
+            {
+              "id": "139",
+              "name": {
+                "value": "rector street greenwich street",
+                "synonyms": [
+                  "rector and greenwich",
+                  "rector street 1 train",
+                  "rector street 7th avenue line",
+                  "rector street broadway 7th avenue line",
+                  "rector street IRT"
+                ]
+              }
+            },
+            {
+              "id": "R26",
+              "name": {
+                "value": "rector street trinity place",
+                "synonyms": [
+                  "rector and trinity",
+                  "rector street R train",
+                  "rector street broadway line",
+                  "rector street BMT"
+                ]
+              }
+            },
+            {
+              "id": "S13",
+              "name": {
+                "value": "richmond valley"
+              }
+            },
+            {
+              "id": "A50",
+              "name": {
+                "value": "rockaway avenue fulton street",
+                "synonyms": [
+                  "rockaway avenue C train"
+                ]
+              }
+            },
+            {
+              "id": "253",
+              "name": {
+                "value": "rockaway avenue livonia avenue",
+                "synonyms": [
+                  "rockaway avenue 3 train",
+                  "rockaway avenue new lots line"
+                ]
+              }
+            },
+            {
+              "id": "A61",
+              "name": {
+                "value": "rockaway boulevard"
+              }
+            },
+            {
+              "id": "H15",
+              "name": {
+                "value": "rockaway park beach 116th street",
+                "synonyms": [
+                  "beach 116th street",
+                  "rockaway park"
+                ]
+              }
+            },
+            {
+              "id": "B06",
+              "name": {
+                "value": "roosevelt island"
+              }
+            },
+            {
+              "id": "S31",
+              "name": {
+                "value": "saint george"
+              }
+            },
+            {
+              "id": "252",
+              "name": {
+                "value": "saratoga avenue"
+              }
+            },
+            {
+              "id": "M06",
+              "name": {
+                "value": "seneca avenue"
+              }
+            },
+            {
+              "id": "D39",
+              "name": {
+                "value": "sheepshead bay"
+              }
+            },
+            {
+              "id": "A54",
+              "name": {
+                "value": "shepherd avenue"
+              }
+            },
+            {
+              "id": "217",
+              "name": {
+                "value": "simpson street"
+              }
+            },
+            {
+              "id": "F22",
+              "name": {
+                "value": "smith 9th streets"
+              }
+            },
+            {
+              "id": "142",
+              "name": {
+                "value": "south ferry"
+              }
+            },
+            {
+              "id": "A33",
+              "name": {
+                "value": "spring street 6th avenue",
+                "synonyms": [
+                  "spring and 6th",
+                  "spring street 8th avenue line",
+                  "spring street E train",
+                  "spring street C train",
+                  "spring street C and E trains"
+                ]
+              }
+            },
+            {
+              "id": "638",
+              "name": {
+                "value": "spring street lafayette street",
+                "synonyms": [
+                  "spring street lex line",
+                  "spring street lexington avenue line",
+                  "spring street 6 train",
+                  "spring and lafayette"
+                ]
+              }
+            },
+            {
+              "id": "S29",
+              "name": {
+                "value": "stapleton"
+              }
+            },
+            {
+              "id": "G19",
+              "name": {
+                "value": "steinway street"
+              }
+            },
+            {
+              "id": "242",
+              "name": {
+                "value": "sterling street"
+              }
+            },
+            {
+              "id": "609",
+              "name": {
+                "value": "saint lawrence avenue"
+              }
+            },
+            {
+              "id": "F04",
+              "name": {
+                "value": "sutphin boulevard",
+                "synonyms": [
+                  "sutphin boulevard F train"
+                ]
+              }
+            },
+            {
+              "id": "G06",
+              "name": {
+                "value": "sutphin boulevard archer avenue JFK airport",
+                "synonyms": [
+                  "sutphin boulevard Z train",
+                  "sutphin boulevard J train",
+                  "sutphin boulevard E train",
+                  "sutphin boulevard E J and Z trains",
+                  "sutphin boulevard archer avenue"
+                ]
+              }
+            },
+            {
+              "id": "L25",
+              "name": {
+                "value": "sutter avenue"
+              }
+            },
+            {
+              "id": "251",
+              "name": {
+                "value": "sutter avenue rutland road"
+              }
+            },
+            {
+              "id": "902",
+              "name": {
+                "value": "times square 42nd street 42nd street shuttle",
+                "synonyms": [
+                  "times square 42nd street S train",
+                  "times square shuttle platform",
+                  "times square 42nd street shuttle platform"
+                ]
+              }
+            },
+            {
+              "id": "127",
+              "name": {
+                "value": "times square 42nd street 7th avenue line",
+                "synonyms": [
+                  "times square 42nd street 3 train",
+                  "times square 42nd street 2 train",
+                  "times square 42nd street 1 train",
+                  "times square 1 2 and 3 trains",
+                  "times square 42nd street 1 2 and 3 trains"
+                ]
+              }
+            },
+            {
+              "id": "R16",
+              "name": {
+                "value": "times square 42nd street broadway line",
+                "synonyms": [
+                  "times square 42nd street W train",
+                  "times square 42nd street R train",
+                  "times square 42nd street Q train",
+                  "times square 42nd street N train",
+                  "times square N Q R and W trains",
+                  "times square 42nd street N Q R and W trains"
+                ]
+              }
+            },
+            {
+              "id": "725",
+              "name": {
+                "value": "times square 42nd street flushing line",
+                "synonyms": [
+                  "times square 7 train",
+                  "times square 42nd street 7 train"
+                ]
+              }
+            },
+            {
+              "id": "S30",
+              "name": {
+                "value": "tompkinsville"
+              }
+            },
+            {
+              "id": "S09",
+              "name": {
+                "value": "tottenville"
+              }
+            },
+            {
+              "id": "D07",
+              "name": {
+                "value": "tremont avenue"
+              }
+            },
+            {
+              "id": "R32",
+              "name": {
+                "value": "union street"
+              }
+            },
+            {
+              "id": "A48",
+              "name": {
+                "value": "utica avenue"
+              }
+            },
+            {
+              "id": "101",
+              "name": {
+                "value": "van cortlandt park 242nd street",
+                "synonyms": [
+                  "242nd street",
+                  "van cortlandt park"
+                ]
+              }
+            },
+            {
+              "id": "J23",
+              "name": {
+                "value": "van siclen avenue fulton street",
+                "synonyms": [
+                  "van siclen avenue BMT",
+                  "van siclen and fulton",
+                  "van siclen avenue J and Z trains",
+                  "van siclen avenue Z train",
+                  "van siclen avenue jamaica line",
+                  "van siclen avenue J train"
+                ]
+              }
+            },
+            {
+              "id": "256",
+              "name": {
+                "value": "van siclen avenue livonia avenue",
+                "synonyms": [
+                  "van siclen avenue IRT",
+                  "van siclen avenue new lots line",
+                  "van siclen avenue 3 train"
+                ]
+              }
+            },
+            {
+              "id": "A53",
+              "name": {
+                "value": "van siclen avenue pitkin avenue",
+                "synonyms": [
+                  "van siclen avenue IND",
+                  "van siclen and pitkin",
+                  "van siclen avenue fulton street line",
+                  "van siclen avenue C train"
+                ]
+              }
+            },
+            {
+              "id": "721",
+              "name": {
+                "value": "vernon boulevard jackson avenue",
+                "synonyms": [
+                  "vernon and jackson",
+                  "vernon jackson avenues"
+                ]
+              }
+            },
+            {
+              "id": "201",
+              "name": {
+                "value": "wakefield 241st street",
+                "synonyms": [
+                  "241st street",
+                  "wakefield"
+                ]
+              }
+            },
+            {
+              "id": "419",
+              "name": {
+                "value": "wall street broadway",
+                "synonyms": [
+                  "wall street lex line",
+                  "wall street lexington avenue line",
+                  "wall and broadway",
+                  "wall street 5 train",
+                  "wall street 4 train",
+                  "wall street 4 and 5 trains"
+                ]
+              }
+            },
+            {
+              "id": "230",
+              "name": {
+                "value": "wall street william street",
+                "synonyms": [
+                  "wall street 3 train",
+                  "wall street 2 train",
+                  "wall street 2 and 3 trains",
+                  "wall and william",
+                  "wall street 7th avenue line",
+                  "wall street broadway 7th avenue line"
+                ]
+              }
+            },
+            {
+              "id": "D20",
+              "name": {
+                "value": "west 4th street washington square lower level",
+                "synonyms": [
+                  "west 4th street washington square M train",
+                  "west 4th street washington square F train",
+                  "west 4th street washington square D train",
+                  "west 4th street washington square B train",
+                  "west 4th street washington square B D F and M trains",
+                  "west 4th street washington square 6th avenue line",
+                  "west 4th street 6th avenue line",
+                  "west 4th street lower level"
+                ]
+              }
+            },
+            {
+              "id": "A32",
+              "name": {
+                "value": "west 4th street washington square upper level",
+                "synonyms": [
+                  "west 4th street washington square E train",
+                  "west 4th street washington square C train",
+                  "west 4th street washington square A train",
+                  "west 4th street washington square A C and E trains",
+                  "west 4th street washington square 8th avenue line",
+                  "west 4th street 8th avenue line",
+                  "west 4th street upper level"
+                ]
+              }
+            },
+            {
+              "id": "D42",
+              "name": {
+                "value": "west 8th street ny aquarium",
+                "synonyms": [
+                  "west 8th street",
+                  "ny aquarium"
+                ]
+              }
+            },
+            {
+              "id": "214",
+              "name": {
+                "value": "west farms square east tremont avenue",
+                "synonyms": [
+                  "west farms square"
+                ]
+              }
+            },
+            {
+              "id": "604",
+              "name": {
+                "value": "westchester square east tremont avenue",
+                "synonyms": [
+                  "westchester square"
+                ]
+              }
+            },
+            {
+              "id": "R27",
+              "name": {
+                "value": "whitehall street south ferry",
+                "synonyms": [
+                  "whitehall street"
+                ]
+              }
+            },
+            {
+              "id": "612",
+              "name": {
+                "value": "whitlock avenue"
+              }
+            },
+            {
+              "id": "L20",
+              "name": {
+                "value": "wilson avenue"
+              }
+            },
+            {
+              "id": "243",
+              "name": {
+                "value": "winthrop street"
+              }
+            },
+            {
+              "id": "J15",
+              "name": {
+                "value": "woodhaven boulevard jamaica avenue",
+                "synonyms": [
+                  "woodhaven boulevard Z train",
+                  "woodhaven boulevard J train",
+                  "woodhaven boulevard J and Z trains",
+                  "woodhaven boulevard BMT",
+                  "woodhaven boulevard jamaica line",
+                  "woodhaven and jamaica"
+                ]
+              }
+            },
+            {
+              "id": "G11",
+              "name": {
+                "value": "woodhaven boulevard queens boulevard",
+                "synonyms": [
+                  "woodhaven boulevard R train",
+                  "woodhaven boulevard M train",
+                  "woodhaven boulevard M and R trains",
+                  "woodhaven boulevard IND"
+                ]
+              }
+            },
+            {
+              "id": "401",
+              "name": {
+                "value": "woodlawn"
+              }
+            },
+            {
+              "id": "712",
+              "name": {
+                "value": "woodside 61st street",
+                "synonyms": [
+                  "61st street woodside"
+                ]
+              }
+            },
+            {
+              "id": "E01",
+              "name": {
+                "value": "world trade center",
+                "synonyms": [
+                  "WTC"
+                ]
+              }
+            },
+            {
+              "id": "138",
+              "name": {
+                "value": "wtc cortlandt"
+              }
+            },
+            {
+              "id": "F18",
+              "name": {
+                "value": "york street"
+              }
+            },
+            {
+              "id": "606",
+              "name": {
+                "value": "zerega avenue"
+              }
+            }
+          ],
+          "name": "STATION"
+        },
+        {
+          "values": [
+            {
+              "id": "Z",
+              "name": {
+                "value": "Z"
+              }
+            },
+            {
+              "id": "GS",
+              "name": {
+                "value": "GS",
+                "synonyms": [
+                  "grand central times square shuttle",
+                  "S 42nd street",
+                  "42nd street S",
+                  "42nd shuttle",
+                  "grand central shuttle",
+                  "times square shuttle",
+                  "42nd street shuttle"
+                ]
+              }
+            },
+            {
+              "id": "SI",
+              "name": {
+                "value": "SI",
+                "synonyms": [
+                  "Staten Island Railway",
+                  "SIR"
+                ]
+              }
+            },
+            {
+              "id": "W",
+              "name": {
+                "value": "W"
+              }
+            },
+            {
+              "id": "R",
+              "name": {
+                "value": "R"
+              }
+            },
+            {
+              "id": "Q",
+              "name": {
+                "value": "Q"
+              }
+            },
+            {
+              "id": "N",
+              "name": {
+                "value": "N",
+                "synonyms": [
+                  "End"
+                ]
+              }
+            },
+            {
+              "id": "M",
+              "name": {
+                "value": "M"
+              }
+            },
+            {
+              "id": "L",
+              "name": {
+                "value": "L"
+              }
+            },
+            {
+              "id": "J",
+              "name": {
+                "value": "J"
+              }
+            },
+            {
+              "id": "FS",
+              "name": {
+                "value": "FS",
+                "synonyms": [
+                  "S franklin",
+                  "S franklin avenue",
+                  "franklin S",
+                  "franklin avenue S",
+                  "franklin shuttle",
+                  "franklin avenue shuttle"
+                ]
+              }
+            },
+            {
+              "id": "H",
+              "name": {
+                "value": "H",
+                "synonyms": [
+                  "S Rockaway",
+                  "Rockaway S",
+                  "Rockaway Shuttle"
+                ]
+              }
+            },
+            {
+              "id": "G",
+              "name": {
+                "value": "G"
+              }
+            },
+            {
+              "id": "FX",
+              "name": {
+                "value": "FX",
+                "synonyms": [
+                  "F diamond",
+                  "diamond F",
+                  "F express"
+                ]
+              }
+            },
+            {
+              "id": "F",
+              "name": {
+                "value": "F"
+              }
+            },
+            {
+              "id": "E",
+              "name": {
+                "value": "E"
+              }
+            },
+            {
+              "id": "D",
+              "name": {
+                "value": "D"
+              }
+            },
+            {
+              "id": "C",
+              "name": {
+                "value": "C"
+              }
+            },
+            {
+              "id": "B",
+              "name": {
+                "value": "B"
+              }
+            },
+            {
+              "id": "A",
+              "name": {
+                "value": "A"
+              }
+            },
+            {
+              "id": "7X",
+              "name": {
+                "value": "7X",
+                "synonyms": [
+                  "seven x",
+                  "7 Diamond",
+                  "Diamond 7",
+                  "7 Express"
+                ]
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "7"
+              }
+            },
+            {
+              "id": "6X",
+              "name": {
+                "value": "6X",
+                "synonyms": [
+                  "six x",
+                  "6 Diamond",
+                  "Diamond 6",
+                  "6 Express"
+                ]
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "6"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "5"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "4"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "3"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "2"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "1"
+              }
+            }
+          ],
+          "name": "TRAIN"
+        }
+      ]
+    }
+  },
+  "version": "34"
+}

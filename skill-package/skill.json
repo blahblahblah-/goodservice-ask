@@ -1,0 +1,68 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Ask Alexa for the status of your NYC subway train or for upcoming train departure times of your subway station.",
+          "examplePhrases": [
+            "Alexa, ask good service for the next trains at bedford avenue",
+            "Alexa, ask good service for the status of the A train",
+            "Alexa, ask good service for currently delayed trains"
+          ],
+          "keywords": [
+            "new",
+            "york",
+            "city",
+            "subway",
+            "mta",
+            "goodservice.io",
+            "goodservice",
+            "good",
+            "service",
+            "nyc",
+            "transit",
+            "delays",
+            "train",
+            "status",
+            "departure",
+            "times",
+            "arrival",
+            "times"
+          ],
+          "name": "goodservice.io NYC Subway Status \u0026 Departure Times",
+          "description": "This Alexa skill is powered by goodservice.io to provide real-time statuses of each train line of the New York City subway system. goodservice.io uses real-time data to determine train delays, gaps in wait times and issues with train speeds for each subway line, as well as accurate estimates of train departure times at any station of the system using data of recent trains.\n\nSAMPLE PHRASES\n- \"Alexa, ask good service for the next trains at 42nd Street Port Authority Bus Terminal\"\n- \"Alexa, ask good service for the next train times\" (remembers the most recently asked station)\n- \"Alexa, ask good service for the status of the F train\"\n- \"Alexa, ask good service for the status of the Rockaway Shuttle\"\n- \"Alexa, ask good service for currently delayed trains\"\n\nFor more information, check out goodservice.io.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Phrases\n\n- \"Alexa, ask good service for the next trains at Bedford Avenue\"\n- \"Alexa, ask good service for the status of the A train\"\n- \"Alexa, ask good service for currently delayed trains\"",
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://www.goodservice.io/api/alexa"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
