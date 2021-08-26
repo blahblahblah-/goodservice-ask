@@ -3,7 +3,7 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Ask Alexa for the status of your NYC subway train or for upcoming train departure times of your subway station.",
+          "summary": "Ask Alexa for the status of your NYC subway train or for upcoming train arrival times of your subway station.",
           "examplePhrases": [
             "Alexa, ask good service for the next trains at bedford avenue",
             "Alexa, ask good service for the status of the A train",
@@ -29,9 +29,10 @@
             "arrival",
             "times"
           ],
-          "name": "goodservice.io NYC Subway Status \u0026 Departure Times",
-          "description": "This Alexa skill is powered by goodservice.io to provide real-time statuses of each train line of the New York City subway system. goodservice.io uses real-time data to determine train delays, gaps in wait times and issues with train speeds for each subway line, as well as accurate estimates of train departure times at any station of the system using data of recent trains.\n\nSAMPLE PHRASES\n- \"Alexa, ask good service for the next trains at 42nd Street Port Authority Bus Terminal\"\n- \"Alexa, ask good service for the next train times\" (remembers the most recently asked station)\n- \"Alexa, ask good service for the status of the F train\"\n- \"Alexa, ask good service for the status of the Rockaway Shuttle\"\n- \"Alexa, ask good service for currently delayed trains\"\n\nFor more information, check out goodservice.io.",
+          "name": "goodservice.io NYC Subway Status \u0026 Arrival Times",
+          "description": "Powered by goodservice.io, this Alexa skill provides real-time statuses of each train line, as well as upcoming train arrival times for any station of the New York City subway system. goodservice.io uses real-time data to determine train delays, gaps in wait times and issues with train speeds for each subway line. Accurate estimates of train departure times at any station are calculated using data from recent trains.\n\nSAMPLE PHRASES\n- \"Alexa, ask good service for the next trains at 42nd Street Port Authority Bus Terminal\"\n- \"Alexa, ask good service for the next train times\" (remembers the most recently asked station)\n- \"Alexa, ask good service for the status of the F train\"\n- \"Alexa, ask good service for the status of the Rockaway Shuttle\"\n- \"Alexa, ask good service for currently delayed trains\"\n\nFor more information, check out goodservice.io.",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "Bug fixes and improvements on recognizing station names.",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
         }
       },
